@@ -1,0 +1,22 @@
+
+CuiFinder User Options: 
+   --config option set
+
+
+UMLS-Interface Configuration Information
+  Sources (SABDEF):
+    MSH
+  Relations (RELDEF):
+    CHD
+    PAR
+  Database: 
+    umls (MMSYS-2016AA-20160329)
+
+
+
+
+The definition(s) of hands (C0018563):
+  1. C0018563 PAR C1140618 MSH : The region of the upper limb in animals, extending from the deltoid region to the HAND, and including the ARM; AXILLA; and SHOULDER.
+  2. C0018563 CHD C3714598 MSH : The region of the HAND between the WRIST and the FINGERS.
+  3. C0018563 CHD C0016129 MSH : Four or five slender jointed digits in humans and primates, attached to each HAND.
+  4. C0018563 CHD C0043262 MSH : The region of the upper limb between the metacarpus and the FOREARM.

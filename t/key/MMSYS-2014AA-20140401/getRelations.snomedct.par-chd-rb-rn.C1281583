@@ -1,0 +1,24 @@
+
+CuiFinder User Options: 
+   --config option set
+
+
+UMLS-Interface Configuration Information
+  Sources (SAB):
+    SNOMEDCT_US
+  Relations (REL):
+    CHD
+    PAR
+    RB
+    RN
+  Database: 
+    umls (MMSYS-2014AA-20140401)
+
+
+
+
+The relations of hand (C1281583) are: 
+ RB
+ RN
+ CHD
+ PAR

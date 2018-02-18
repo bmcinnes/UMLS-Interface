@@ -1,0 +1,27 @@
+
+CuiFinder User Options: 
+   --config option set
+
+
+UMLS-Interface Configuration Information
+  Sources (SAB):
+    SNOMEDCT_US
+  Relations (REL):
+    CHD
+    PAR
+  Database: 
+    umls (MMSYS-2014AA-20140401)
+
+
+
+
+The children of hand (C1281583) are: 
+  left hand (C1288949) 
+  entire right hand (body structure) (C1288948) 
+The children of hand (C0018563) are: 
+  digital nerve of hand (C0446798) 
+  synovial structure of hand (body structure) (C0730024) 
+  hand (C1281583) 
+  hand part (C1268199) 
+  structure of left hand (body structure) (C0230371) 
+  structure of right hand (C0230370) 

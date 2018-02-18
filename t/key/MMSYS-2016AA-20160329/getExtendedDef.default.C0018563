@@ -1,0 +1,476 @@
+
+
+UMLS-Interface Configuration Information:
+(Default Information - no config file)
+
+  Sources (SAB):
+     MSH
+  Relations (REL):
+     PAR
+     CHD
+
+  Sources (SABDEF):
+     UMLS_ALL
+  Relations (RELDEF):
+     UMLS_ALL
+
+
+The definition(s) of hand structure (C0018563):
+  1. C0018563 ST bpoc STDEF : A collection of cells and tissues which are localized to a specific area or combine and carry out one or more specialized functions of an organism. This ranges from gross structures to small components of complex organs. These structures are relatively localized in comparison to tissues.
+  2. C0018563 PAR C0446516 SNOMEDCT_US : Upper extremity between shoulder and elbow
+  3. C0018563 PAR C0446516 NCI : The portion of the upper extremity between the shoulder and the elbow. For clinical purposes this term is also used to refer to the whole superior limb.
+  4. C0018563 PAR C0446516 NCI_CDISC : The portion of the upper extremity between the shoulder and the elbow. For clinical purposes this term is also used to refer to the whole superior limb. (NCI)
+  5. C0018563 PAR C0446516 NCI_NICHD : The portion of the upper extremity between the shoulder and the elbow. For clinical purposes this term is also used to refer to the whole superior limb. (NCI)
+  6. C0018563 PAR C0446516 MSH : The superior part of the upper extremity between the SHOULDER and the ELBOW.
+  7. C0018563 PAR C1140618 SNOMEDCT_US : Upper extremity, including shoulder, arm, forearm, wrist, and hand
+  8. C0018563 PAR C1140618 NCI : The region of the body that includes the arm, the forearm, and hand.
+  9. C0018563 PAR C1140618 NCI_NICHD : The region of the body that includes the arm, the forearm, and hand. (NCI)
+  10. C0018563 PAR C1140618 NCI_CDISC : The region of the body that extends distal to the scapulohumeral joint.
+  11. C0018563 PAR C1140618 MSH : The region of the upper limb in animals, extending from the deltoid region to the HAND, and including the ARM; AXILLA; and SHOULDER.
+  12. C0018563 PAR C1140618 CSP : part of the upper extremity between the shoulder and wrist; includes forearm and upper arm.
+  13. C0018563 PAR C0817635 FMA : Free limb, which is distal to the pectoral girdle and demarcated by the plane of the surface of the glenoid fossa from the pectoral girdle; together with the pectoral girdle, it constitutes the upper limb. Examples: There are only two instances, right and left free upper limbs.
+  14. C0018563 PAR C0817635 UWDA : Free limb, which is distal to the pectoral girdle and demarcated by the plane of the surface of the glenoid fossa from the pectoral girdle; together with the pectoral girdle, it constitutes the upper limb. Examples: There are only two instances, right and left free upper limbs.
+  15. C0018563 PAR C0229962 FMA : Anatomical structure, which has as its direct parts instances of anatomical sets of organs and cardinal organ parts spatially associated with either the skull, vertebral column, or the skeleton of a limb; in their aggregate are surrounded by a part of the skin Examples: Head, body proper, right upper limb.
+  16. C0018563 PAR C0229962 UWDA : Anatomical structure, which consists of a maximal set of diverse subclasses of organ and organ part spatially associated with either the skull, a segment of the vertebral column or a complete set of bones of the appendicular skeleton; it is partially surrounded by skin and forms a distinct morphological subdivision of the body; together with all other body parts, a body part constitutes the human body. Examples: Canonical instances are limited to head, neck, trunk, and the limbs.
+  17. C0018563 PAR C0229962 NCI : Any part of an organism.
+  18. C0018563 PAR C0229962 MSH : Parts of the human body viewed from a philosophical or social perspective.
+  19. C0018563 PAR C1268196 NCI : Any component of the region of the body that includes the arm, the forearm, and hand.
+  20. C0018563 CHD C0016129 FMA : Subdivision of the hand demarcated from the hand proper by the skin crease in line with the distal edge of finger webs. Examples: thumb, right middle finger, left little finger.
+  21. C0018563 CHD C0016129 UWDA : Subdivision of the hand demarcated from the hand proper by the skin crease in line with the distal edge of finger webs. Examples: thumb, right middle finger, left little finger.
+  22. C0018563 CHD C0016129 NCI_CDISC : Any of the digits of the hand. (NCI)
+  23. C0018563 CHD C0016129 NCI : Any of the digits of the hand.
+  24. C0018563 CHD C0016129 MSH : Four or five slender jointed digits in humans and primates, attached to each HAND.
+  25. C0018563 CHD C0016129 NCI_NICHD : Any of the digits of the hand. (NCI)
+  26. C0018563 CHD C0016129 CSP : one of the five digits of the hand.
+  27. C0018563 CHD C0230373 NCI_CDISC : The undersurface of the hand. (NCI)
+  28. C0018563 CHD C0230373 NCI : The undersurface of the hand.
+  29. C0018563 CHD C0230373 NCI_NICHD : The undersurface of the hand. (NCI)
+  30. C0018563 CHD C1856786 HPO : Underdevelopment of a fingernail. [HPO:curators]
+  31. C0018563 CHD C1857483 HPO : Poorly defined or shallow palmar creases. [pmid:19125433]
+  32. C0018563 CHD C1842878 HPO : Hypoplasia (congenital reduction in size) of the fifth finger, also known as the little finger. [HPO:sdoelken]
+  33. C0018563 CHD C2674737 HPO : An anomaly of a finger. [HPO:probinson]
+  34. C0018563 CHD C0409348 HPO : The distal interphalangeal joint and/or the proximal interphalangeal joint of the fingers cannot be extended to 180 degrees by either active or passive extension. [HPO:sdoelken, pmid:19125433]
+  35. C0018563 CHD C0009080 NCI : An enlargement of the tips of the fingers or toes and a change in the angle where the nails emerge. It occurs when the amount of soft tissue beneath the nail beds increases. It may be idiopathic, hereditary, or associated with a wide range of diseases, including cardiopulmonary disorders and malignant neoplasms.
+  36. C0018563 CHD C0009080 NCI : An abnormal enlargement of the terminal phalanges accompanied by increased length-wise curvature of the nails, giving the digits a club-like appearance. Clubbing has been noted with a wide variety of conditions, including pulmonary and cardiac diseases, liver disorders, and disorders of the gastrointestinal tract.
+  37. C0018563 CHD C0009080 HPO : Terminal broadening of the fingers (distal phalanges of the fingers). [HPO:sdoelken]
+  38. C0018563 CHD C1849292 HPO : Ossification of carpal bones at an abnormally early age. [HPO:probinson]
+  39. C0018563 CHD C2677209 HPO : A chronic loss of joint motion in metacarpophalangeal joints due to structural changes in muscle, tendons, ligaments, or skin that prevents normal movement. [HPO:probinson]
+  40. C0018563 CHD C0431890 NCI : A congenital abnormality characterized by hypoplasia or absence of the thumb. It may be associated with other congenital abnormalities.
+  41. C0018563 CHD C0431890 HPO : Hypoplasia (congenital reduction in size) of the thumb. [HPO:probinson]
+  42. C0018563 CHD C0431863 HPO : Synostosis (bony fusion) involving one or more bones of the carpus (scaphoid, lunate, triquetrum, trapezium, trapezoid, capitate, hamate, pisiform). [HPO:probinson]
+  43. C0018563 CHD C1862479 HPO : Absence of one or more interphalangeal creases (i.e., of the transverse lines in the skin between the phalanges of the fingers). [HPO:probinson]
+  44. C0018563 CHD C1850336 HPO : Presence of only one (instead of two, as normal) interphalangeal crease of the fifth finger. [HPO:probinson]
+  45. C0018563 CHD C1841684 HPO : Ossification of carpal bones occurs later than age-adjusted norms. [HPO:probinson]
+  46. C0018563 CHD C0221373 HPO : A condition in which middle parts of the hand (fingers and metacarpals) are missing giving a cleft appearance. The severity is very variable ranging from slightly hypoplastic middle fingers over absent middel fingers as far as oligo- or monodactyl hands. [HPO:sdoelken]
+  47. C0018563 CHD C1860162 HPO : Partial duplication of the distal phalanx of the thumb. Depending on the severity, the appearance on x-ray can vary from a notched phalanx (the duplicated bone is almost completely fused with the phalanx) to a partially fused appearance of the two bones. [HPO:sdoelken]
+  48. C0018563 CHD C1860162 HPO : Cleft (split into two parts) distal phalanx of thumb. [HPO:probinson]
+  49. C0018563 CHD C1969236 HPO : Fusion of the hands and feet by a thin membrane of skin (scarring) seen in forms of dystrophic epidermolysis bullosa and leading to a mitten" hand deformity." [HPO:probinson, pmid:20301304]
+  50. C0018563 CHD C1837084 HPO : Diminished length of one or more metacarpal bones in relation to the others of the same hand or to the contralateral metacarpal. [pmid:19125433]
+  51. C0018563 CHD C1849311 HPO : In contrast to the proximal phalanges of the digits 2-5, the proximal phalanx of the thumb is embryologically equivalent to the middle phalanges of the other digits, whereas the first metacarpal is embryologically of phalangeal origin and as such equivalent to the proximal phalanges of the other digits. [HPO:probinson]
+  52. C0018563 CHD C1839829 HPO : Short distance from the end of the finger to the most distal interphalangeal crease or the distal interphalangeal joint flexion point. That is, hypoplasia of one or more of the distal phalanx of finger. [HPO:probinson, pmid:19125433]
+  53. C0018563 CHD C0152427 NCI : A congenital abnormality characterized by more than 5 digits on a hand or foot.
+  54. C0018563 CHD C0152427 HPO : A congenital anomaly characterized by the presence of supernumerary fingers or toes. [HPO:probinson]
+  55. C0018563 CHD C0152427 MSH : A congenital anomaly of the hand or foot, marked by the presence of supernumerary digits.
+  56. C0018563 CHD C0265608 HPO : A partial duplication, depending on severity leading to a broad or bifid appearance, affecting one or more of the phalanges of the thumb. As opposed to a complete duplication there is still a variable degree of fusion between the duplicated bones. [HPO:probinson]
+  57. C0018563 CHD C1850630 HPO : Abnormally wide (broad) distal phalanx of finger. [HPO:sdoelken]
+  58. C0018563 CHD C0154676 HPO : A focal dystonia of the fingers, hand, and/or forearm that appears when the affected person attempts to do a task that requires fine motor movements such as writing or playing a musical instrument. [HPO:probinson]
+  59. C0018563 CHD C0239830 HPO : Muscular atrophy involving the muscles of the hand. [HPO:curators]
+  60. C0018563 CHD C0238591 HPO : The absence of all phalanges of all the digits of a limb and the associated soft tissues. [pmid:19125433]
+  61. C0018563 CHD C1836192 HPO : Aplasia or Hypoplasia affecting the metacarpal bones. [HPO:curators]
+  62. C0018563 CHD C0265213 HPO : A form of arthrogryposis primarily affecting the hands and the feet. [HPO:probinson]
+  63. C0018563 CHD C1850049 HPO : Clinodactyly refers to a bending or curvature of the fifth finger in the radial direction (i.e., towards the 4th finger). [HPO:curators, pmid:16252026]
+  64. C0018563 CHD C0424731 NCI : A single transverse palmar crease is found in 5% of newborns and is frequently inherited as a familial trait. However, single palmar creases can be associated with Down's syndrome and other genetic disorders, or with fetal alcohol syndrome.
+  65. C0018563 CHD C0424731 HPO : The distal and proximal transverse palmar creases are merged into a single transverse palmar crease. [HPO:probinson, pmid:19125433]
+  66. C0018563 CHD C0009917 CHV : An abnormal, often permanent shortening of muscle or scar tissue that results in deformity of a joint of the body
+  67. C0018563 CHD C0009917 CHV : An abnormal, often permanent shortening of muscle or scar tissue that results in deformity of a joint of the body
+  68. C0018563 CHD C0009917 NCI : Permanent contraction of a muscle as a result of spasm or paralysis.
+  69. C0018563 CHD C0009917 CSP : high resistance to passive stretch of a muscle, resulting from fibrosis of the tissue supporting the muscles or the joints, or from disorder of the muscle fibers.
+  70. C0018563 CHD C0009917 MSH : Prolonged shortening of the muscle or other soft tissue around a joint, preventing movement of the joint.
+  71. C0018563 CHD C1857304 HPO : Chronic loss of joint motion in a finger due to structural changes in non-bony tissue. [HPO:probinson]
+  72. C0018563 CHD C1836189 HPO : Bending or curvature of a finger toward the radial side (i.e., towards the thumb). The deviation is at the metacarpal-phalangeal joint, and this finding is distinct from clinodactyly. [HPO:probinson, pmid:19125433]
+  73. C0018563 CHD C0241397 HPO : A thumb with three phalanges in a single, proximo-distal axis. Thus, this term applies if the thumb has an accessory phalanx, leading to a digit like appearance of the thumb. [HPO:probinson, pmid:19125433]
+  74. C0018563 CHD C0426886 HPO : The gradual reduction in girth of the digit from proximal to distal. [pmid:19125433]
+  75. C0018563 CHD C0241395 HPO : Spoon-shaped, broad thumbs. [HPO:curators]
+  76. C0018563 CHD C0003706 HPO : Abnormally long and slender fingers (spider fingers")." [HPO:probinson]
+  77. C0018563 CHD C0003706 MSH : An abnormal bone development that is characterized by extra long and slender hands and fingers, such that the clenched thumb extends beyond the ulnar side of the hand. Arachnodactyly can include feet and toes. Arachnodactyly has been associated with several gene mutations and syndromes.
+  78. C0018563 CHD C3276324 HPO : Presence of an angular or V -shaped indentation on the ulnar side of the fifth metacarpal bone (i.e., on the sides towards the fifth finger). [HPO:probinson]
+  79. C0018563 CHD C3278811 HPO : Absent thumb, i.e., the absence of both phalanges of a thumb and the associated soft tissues. [HPO:probinson, pmid:19125433]
+  80. C0018563 CHD C1855091 HPO : Hypoplastic (short) proximal phalanx of the thumb. In contrast to the proximal phalanges of the digits 2-5, the proximal phalanx of the thumb is embryologically equivalent to the middle phalanges of the other digits, whereas the first metacarpal is embryologically of phalangeal origin and as such equivalent to the proximal phalanges of the other digits. [HPO:probinson]
+  81. C0018563 CHD C3277750 HPO : Absence of the middle phalanx of the little (5th) finger. [HPO:curators]
+  82. C0018563 CHD C0039075 NCI : A congenital condition characterized by webbing between the fingers and/or toes, joining the digits together. In rare cases, the joining of the fingers or toes may involve bony fusion between the digits. Common causes include Down Syndrome and hereditary syndactyly.
+  83. C0018563 CHD C0039075 HPO : Webbing or fusion of the fingers or toes, involving soft parts only or including bone structure. Bony fusions are revered to as bony" syndactyly if the fusion occurs in a radio-ulnar axis. Fusions of bones of the fingers or toes in a proximo-distal axis are refered to as "symphalangism"." [HPO:probinson]
+  84. C0018563 CHD C0039075 MSH : A congenital anomaly of the hand or foot, marked by the webbing between adjacent fingers or toes. Syndactylies are classified as complete or incomplete by the degree of joining. Syndactylies can also be simple or complex. Simple syndactyly indicates joining of only skin or soft tissue; complex syndactyly marks joining of bony elements.
+  85. C0018563 CHD C3552414 HPO : Displacement of the thumb from its normal position. [HPO:curators]
+  86. C0018563 CHD C3552484 HPO : A pseudoepiphysis (which is a secondary ossification center distinct from the normal epiphysis) of one or more phalanges of the thumb. [HPO:probinson]
+  87. C0018563 CHD C3554612 HPO : Proximal interphalangeal (PIP) flexion deformity of the little finger. That is, the PIP joint of a little finger is bent (flexed) and cannot be straightened actively or passively. It is thus a chronic loss of joint motion due to structural changes in muscle, tendons, ligaments, or skin that prevents normal movement. [HPO:probinson]
+  88. C0018563 CHD C3554614 HPO : Displacement of the 3rd finger towards the ulnar side (i.e., towards the ring finger). [HPO:sdoelken]
+  89. C0018563 CHD C0150988 HPO : Localized thickening and tightness of the skin of the fingers or toes. [HPO:probinson]
+  90. C0018563 CHD C0221352 HPO : Webbing or fusion of the fingers, involving soft parts only or including bone structure. Bony fusions are revered to as bony" Syndactyly if the fusion occurs in a radio-ulnar axis. Fusions of bones of the fingers in a proximo-distal axis are refered to as "Symphalangism"." [HPO:curators]
+  91. C0018563 CHD C1862096 HPO : Absence of one or more middle phalanx of a finger. [HPO:probinson]
+  92. C0018563 CHD C3550704 HPO : A morphological abnormality of a digit, i.e., of a finger or toe. [HPO:probinson]
+  93. C0018563 CHD C2699746 NCI : A rare genetic disorder characterized by malformations in the hands and feet. The abnormalities include increased number of fingers and toes and fusion of digits into one large digit.
+  94. C0018563 CHD C1864716 HPO : Atrophy of the intrinsic muscle groups of the hand, comprising the thenar and hypothenar muscles; the interossei muscles; and the lumbrical muscles. [HPO:probinson]
+  95. C0018563 CHD C0039093 MSH : A union between adjacent bones or parts of a single bone formed by osseous material, such as ossified connecting cartilage or fibrous tissue. (Dorland, 27th ed)
+  96. C0018563 CHD C3554617 HPO : In the resting position, the tip of the thumb is on, or near, the palm, close to the base of the fourth or fifth finger. [pmid:19125433]
+  97. C0018563 CHD C1856889 HPO : Syndactyly with fusion of fingers three and four. [HPO:sdoelken]
+  98. C0018563 CHD C3554724 HPO : A complete duplication affecting one or more of the phalanges of the thumb. As opposed to a partial duplication were there is still a variable degree of fusion between the duplicated bones, a complete duplication leads to two separate bones appearing side to side (radio-ulnar axis) as seen on x-rays. A duplication leading to an accesory bone appearing in the proximo-distal axis on x-rays, this is actually a different entity called a Pseudoepiphyses (see according terms) sometimes also refered to as Hyperphalangism. [HPO:probinson]
+  99. C0018563 CHD C1844548 HPO : Abnormally short finger associated with developmental hypoplasia. [HPO:probinson]
+  100. C0018563 CHD C4021608 HPO : Hypoplasia of all of the distal phalanx of finger. [HPO:probinson]
+  101. C0018563 CHD C1848670 HPO : Small or missing phalangeal bones of the fingers of the hand. [HPO:probinson]
+  102. C0018563 CHD C0264142 HPO : For children from birth to 4 years of age the palm width is more than 2 SD above the mean; for children from 4 to 16 years of age the palm width is above the 95th centile; or, the width of the palm appears disproportionately wide for the length. [HPO:probinson, pmid:19125433]
+  103. C0018563 CHD C0432055 HPO : Syndactyly with fusion of fingers two and three. [HPO:sdoelken]
+  104. C0018563 CHD C1857539 HPO : Excessively deep creases of the palm. [pmid:19125433]
+  105. C0018563 CHD C1844820 HPO : The ability of a joint to move beyond its normal range of motion. [HPO:probinson]
+  106. C0018563 CHD C0040067 NCI_CDISC : The thick and short hand digit which is next to the index finger in humans. (NCI)
+  107. C0018563 CHD C0040067 NCI : The thick and short hand digit which is next to the index finger in humans.
+  108. C0018563 CHD C0040067 MSH : The first digit on the radial side of the hand which in humans lies opposite the other four.
+  109. C0018563 CHD C0040067 NCI_NICHD : The thick and short hand digit which is next to the index finger in humans. (NCI)
+  110. C0018563 CHD C0230388 NCI : The second finger from the radial side of the hand, next to the thumb.
+  111. C0018563 CHD C0230388 NCI_CDISC : The second finger from the radial side of the hand, next to the thumb. (NCI)
+  112. C0018563 CHD C0230388 NCI_NICHD : The second finger from the radial side of the hand, next to the thumb. (NCI)
+  113. C0018563 CHD C0230403 NCI : The fifth and smallest finger from the radial side of the hand.
+  114. C0018563 CHD C0230403 NCI_CDISC : The fifth and smallest finger from the radial side of the hand. (NCI)
+  115. C0018563 CHD C0230403 NCI_NICHD : The fifth and smallest finger from the radial side of the hand. (NCI)
+  116. C0018563 CHD C0230393 NCI_CDISC : The middle or third finger from the radial side of the hand. (NCI)
+  117. C0018563 CHD C0230393 NCI : The middle or third finger from the radial side of the hand.
+  118. C0018563 CHD C0230393 NCI_NICHD : The middle or third finger from the radial side of the hand. (NCI)
+  119. C0018563 CHD C0230398 NCI : The fourth finger from the radial side of the hand.
+  120. C0018563 CHD C0230398 NCI_CDISC : The fourth finger from the radial side of the hand. (NCI)
+  121. C0018563 CHD C0230398 NCI_NICHD : The fourth finger from the radial side of the hand. (NCI)
+  122. C0018563 CHD C0222224 NCI : The skin covering the distal portion of the upper extremity.
+  123. C0018563 CHD C1836674 HPO : Hypoplastic/small distal phalanx of the fifth finger. [HPO:sdoelken]
+  124. C0018563 CHD C0220697 HPO : A form of polydactyly in which the extra digit or digits are localized on the side of the fifth finger or fifth toe. [HPO:probinson]
+  125. C0018563 CHD C1837603 HPO : Ulceration and osteomyelitis of the distal parts of the limbs associated with necrosis and spontaneous detachment of digits or parts of digits. [HPO:probinson]
+  126. C0018563 CHD C0575802 HPO : Disproportionately small hand. [HPO:probinson]
+  127. C0018563 CHD C0409345 HPO : A chronic loss of wrist joint motion due to structural changes in muscle, tendons, ligaments, or skin that prevent normal movement of the joints of the wrist. [HPO:probinson]
+  128. C0018563 CHD C1842229 HPO : Abnormally broad metacarpal bones. [HPO:probinson]
+  129. C0018563 CHD C1855185 HPO : Increased side-to-side width of one or more phalanges of the fingers or toes. [HPO:probinson]
+  130. C0018563 CHD C1861388 HPO : Short fifth metacarpal bone. [HPO:probinson]
+  131. C0018563 CHD C1850631 HPO : Short third metacarpal bone. [HPO:probinson]
+  132. C0018563 CHD C0158113 HPO : Contractures of one ore more joints of the hands meaning chronic loss of joint motion due to structural changes in non-bony tissue. [HPO:sdoelken]
+  133. C0018563 CHD C1840535 HPO : An abnormality affecting the carpal bones of the wrist (scaphoid, lunate, triquetral, pisiform, trapezium, trapezoid, capitate, hamate). [HPO:probinson]
+  134. C0018563 CHD C0426891 HPO : Increased thumb width without increased dorso-ventral dimension. [pmid:19125433]
+  135. C0018563 CHD C1862095 HPO : The distal and proximal transverse palmar creases are merged into a single transverse palmar crease on both hands. [HPO:probinson]
+  136. C0018563 CHD C1861872 HPO : The presence of multiple creases on the palm of the hand (more than the normal three major creases (distal transverse crease, proximal transverse crease, and thenar crease). [HPO:probinson]
+  137. C0018563 CHD C1844891 HPO : Displacement of the 2nd (index) finger towards the ulnar side. [HPO:curators]
+  138. C0018563 CHD C1834060 HPO : Absence or underdevelopment (hypoplasia) of the middle phalanx of the fifth finger. [HPO:sdoelken]
+  139. C0018563 CHD C1839864 HPO : A bent (flexed) finger or toe joint that cannot be straightened actively or passively. It is thus a chronic loss of joint motion due to structural changes in muscle, tendons, ligaments, or skin that prevents normal movement of joints. []
+  140. C0018563 CHD C0003862 NCI_FDA : Pain in a joint.
+  141. C0018563 CHD C0003862 NCI_CTCAE : A disorder characterized by a sensation of marked discomfort in a joint.
+  142. C0018563 CHD C0003862 NCI : Pain in a joint.
+  143. C0018563 CHD C0003862 NCI_NCI-GLOSS : Joint pain.
+  144. C0018563 CHD C0003862 HPO : Joint pain. [HPO:probinson]
+  145. C0018563 CHD C0003862 NCI_NICHD : Pain in a joint.
+  146. C0018563 CHD C0003862 MSH : Pain in the joint.
+  147. C0018563 CHD C1860253 HPO : A pseudoepiphysis is a secondary ossification center distinct from the normal epiphysis. The normal metacarpal epiphyses are located at the distal ends of the metacarpal bones. Accessory epiphyses (which are also known as pseudoepiphyses) can also occasionally be observed at the proximal ends of the metacarpals, usually involving the 2nd metacarpal bone. [HPO:doelkens]
+  148. C0018563 CHD C1861373 HPO : Y-shaped metacarpals are the result of a partial fusion of two metacarpal bones, with the two arms of the Y pointing in the distal direction. Y-shaped metacarpals may be seen in combination with polydactyly. [HPO:curators]
+  149. C0018563 CHD C1855239 HPO : A cone-shaped appearance of the epiphyses of the metacarpal bones, producing a 'ball-in-a-socket' appearance. This epiphyses are located at the distal ends of the metacarpal bones. [HPO:curators]
+  150. C0018563 CHD C0685409 HPO : The distal interphalangeal joint and/or the proximal interphalangeal joint of the fingers or toes cannot be extended to 180 degrees by either active or passive extension. [HPO:probinson]
+  151. C0018563 CHD C0877165 HPO : Short (hypoplastic) phalanx of finger, affecting one or more phalanges. [HPO:sdoelken]
+  152. C0018563 CHD C1863749 HPO : Underdevelopment of one or more carpal bones. [HPO:probinson]
+  153. C0018563 CHD C1846950 HPO : Short (hypoplastic) middle phalanx of finger, affecting one or more fingers. [HPO:probinson]
+  154. C0018563 CHD C1846473 HPO : Developmental defect associated with absence of one or more metacarpal bones. [HPO:probinson]
+  155. C0018563 CHD C1865702 HPO : Chronic loss of joint motion in the 5th finger due to structural changes in non-bony tissue. The term camptodactyly of the 5th finger is used if the distal and/or proximal interphalangeal joints are affected. [HPO:sdoelken]
+  156. C0018563 CHD C1865254 HPO : Abnormal increase in width of the distal region of the metacarpal bones. [HPO:curators]
+  157. C0018563 CHD C1860606 HPO : Congenital hypoplasia of one or more proximal phalanx of finger. [HPO:probinson]
+  158. C0018563 CHD C0241521 HPO : Divergence of the longitudinal axis of the hand at the wrist in a posterior (ulnar) direction (i.e., towards the little finger). [HPO:probinson, pmid:19125433]
+  159. C0018563 CHD C1844577 HPO : The ability of the finger joints to move beyond their normal range of motion. [HPO:curators]
+  160. C0018563 CHD C1857508 HPO : Uneven (irregular) increase in bone density of one or more of the phalanges of the hand. [HPO:probinson]
+  161. C0018563 CHD C1835807 HPO : A soft tissue prominence of the ventral aspects of the fingertips. The term persistent fetal fingertip pads" is often used as a synonym, but should better not be used because it implies knowledge of history of the patient which often does not exist." [HPO:probinson]
+  162. C0018563 CHD C0265552 HPO : Significant increase in the length and girth of most or all of a digit compared to its contralateral digit (if unaffected) or compared to what would be expected for age/body build. The increased girth is accompanied by an increase in the dorso-ventral dimension AND the lateral dimension of the digit. [pmid:19125433]
+  163. C0018563 CHD C1861921 HPO : A soft tissue continuity in the A/P axis between two digits that extends distally to at least the level of the proximal interphalangeal joints, or a soft tissue continuity in the A/P axis between two digits that lies significantly distal to the flexion crease that overlies the metacarpophalangeal or metatarsophalangeal joint of the adjacent digits. [HPO:probinson]
+  164. C0018563 CHD C0231679 HPO : Bending or curvature of a finger toward the ulnar side (i.e., away from the thumb). The deviation is at the metacarpal-phalangeal joint, and this finding is distinct from clinodactyly. [HPO:probinson, pmid:19125433]
+  165. C0018563 CHD C1857269 HPO : With the hand relaxed and the thumb in the plane of the palm, the axis of the thumb forms an angle of at least 90 degrees with the long axis of the hand. [HPO:probinson, pmid:19125433]
+  166. C0018563 CHD C0149651 HPO : Broadening of the soft tissues (non-edematous swelling of soft tissues) of the digital tips in all dimensions associated with an increased longitudinal and lateral curvature of the nails. [HPO:sdoelken, pmid:19125433]
+  167. C0018563 CHD C1849343 HPO : This term applies if one or more of the distal phalanges of the hand are either partially duplicated, depending on severity leading to a broad or bifid appearance of the phalanges, or completely duplicated. [HPO:sdoelken]
+  168. C0018563 CHD C3179508 HPO : Hypoplastic/small or absent thumb. [HPO:probinson]
+  169. C0018563 CHD C1838610 HPO : In contrast to the proximal phalanges of the digits 2-5, the proximal phalanx of the thumb is embryologically equivalent to the middle phalanges of the other digits, whereas the first metacarpal is embryologically of phalangeal origin and as such equivalent to the proximal phalanges of the other digits. [HPO:curators]
+  170. C0018563 CHD C1855171 HPO : Metaphyseal cupping affecting the metacarpal bones. [HPO:curators]
+  171. C0018563 CHD C0018564 HPO : An abnormality affecting one or both hands. [HPO:probinson]
+  172. C0018563 CHD C0018564 MSH : Alterations or deviations from normal shape or size which result in a disfigurement of the hand.
+  173. C0018563 CHD C1846955 NCI : Abnormally early fusion of the bone growth plate.
+  174. C0018563 CHD C1846955 NCI_NICHD : Abnormally early fusion of the bone growth plate.
+  175. C0018563 CHD C0220664 HPO : This type of brachydactyly is characterized by short and broad terminal phalanges of the thumbs and big toes. [HPO:probinson]
+  176. C0018563 CHD C0152441 HPO : An anomaly related to partial closure, or failure of development of the ulnar side of the distal radial growth plate, which results in an arrest of epiphyseal growth of the medial and volar portions of the distal radius. This leads to shortening of the radius and relative overgrowth of the ulna. [HPO:probinson, pmid:12362035]
+  177. C0018563 CHD C1859480 HPO : A cone-shaped appearance of the epiphyses of the fingers of the hand, producing a 'ball-in-a-socket' appearance. The related entity 'angel-shaped' epiphysis refers to a pronounced cone-shaped epiphysis in combination with a pseudoepiphysis at the distal end of a phalanx. [HPO:curators]
+  178. C0018563 CHD C1840419 HPO : Increase in bone denisty in the diaphyseal (shaft) region of a metacarpal bone. [HPO:probinson]
+  179. C0018563 CHD C1856911 HPO : Sclerosis of the epiphyses, leading to an increased degree of radiopacity (white or ivory appearance) in X-rays. [HPO:sdoelken]
+  180. C0018563 CHD C1836219 HPO : Congenital absence of a carpal bone. [HPO:probinson]
+  181. C0018563 CHD C1844822 HPO : Rounding and broadening of the tufts of the distal phalanges. [HPO:probinson]
+  182. C0018563 CHD C1861395 HPO : Reduced muscle mass on the ulnar side of the palm, that is, reduction in size of the hypothenar eminence. [HPO:probinson, pmid:19125433]
+  183. C0018563 CHD C0221357 MSH : Congenital anomaly of abnormally short fingers or toes.
+  184. C0018563 CHD C0221357 HPO : Digits that appear disproportionately short compared to the hand/foot. The word brachydactyly is used to describe a series of Mendelian diseases characterized by distinct patterns of shortened digits (brachydactyly types A-E). This is the sense used here, however, it is preferable to described the observed phenotypic abnormalities precisely. [HPO:probinson]
+  185. C0018563 CHD C1840309 HPO : Short fourth metacarpal bone. [HPO:probinson]
+  186. C0018563 CHD C0239815 HPO : An abnormal hand posture in which the hands are clenched to fists. All digits held completely flexed at the metacarpophalangeal and interphalangeal joints. [HPO:sdoelken, pmid:10085502]
+  187. C0018563 CHD C1446712 HPO : A finger resting on the dorsal surface of an adjacent digit when the hand is at rest. [HPO:probinson, pmid:19125433]
+  188. C0018563 CHD C1846474 HPO : Underdevelopment of the thenar eminence with reduced palmar soft tissue mass surrounding the base of the thumb. [HPO:probinson, pmid:19125433]
+  189. C0018563 CHD C1858091 HPO : The middle finger is more than 2 SD above the mean for newborns 27 to 41 weeks EGA or above the 97th centile for children from birth to 16 years of age AND the five digits retain their normal length proportions relative to each other (i.e., it is not the case that the middle finger is the only lengthened digit), or, Fingers that appear disproportionately long compared to the palm of the hand. [pmid:19125433]
+  190. C0018563 CHD C1861336 HPO : Absence or underdevelopment of the distal phalanges. [HPO:curators]
+  191. C0018563 CHD C1854749 HPO : Some or all of the metacarpal bones (i.e., metacarpal II to V) have a pointed proximal appearance. [HPO:sdoelken]
+  192. C0018563 CHD C1857482 HPO : Digits are disproportionately narrow (reduced girth) for the hand/foot size or build of the individual. [pmid:19125433]
+  193. C0018563 CHD C0265609 HPO : The presence of more than the normal number of carpal bones. [HPO:curators]
+  194. C0018563 CHD C1848595 HPO : The presence of a supernumerary finger or toe (not a thumb or hallux) involving the third or fourth metacarpal/tarsal with associated osseous syndactyly. [pmid:19125433]
+  195. C0018563 CHD C1848597 HPO : A central Y-shaped metacarpal is the result of a partial fusion of two central metacarpals (i.e., metacarpals 2-4) of the hand, with the two arms of the Y pointing in the distal direction. Central Y-shaped metacarpals may be seen as a result of a central polydactyly with partial fusion of the duplicated metacarpal. [HPO:curators]
+  196. C0018563 CHD C1855620 HPO : Fusion of the epiphysis and metaphysis of one or more phalanges prior to the normal age or stage of growth. [HPO:probinson]
+  197. C0018563 CHD C1856877 HPO : The ability of the joints of the hand to move beyond their normal range of motion. [HPO:curators]
+  198. C0018563 CHD C1863382 HPO : A developmental defect characterized by the absence of the first metatarsal bone. [HPO:probinson]
+  199. C0018563 CHD C1834032 HPO : Congenital fusion (ankylosis) of the interphalangeal joint of the thumb. [HPO:probinson, pmid:22379556]
+  200. C0018563 CHD C1834034 HPO : Absence or underdevelopment (hypoplasia) of the middle phalanx of the little (5th) finger. [HPO:curators]
+  201. C0018563 CHD C1844709 HPO : Displacement of the 2nd finger towards the radial side. [HPO:curators]
+  202. C0018563 CHD C1834980 HPO : Metaphyseal cupping affecting the proximal phalanges. [HPO:curators]
+  203. C0018563 CHD C1833734 HPO : Osteolysis affecting carpal bones. [HPO:probinson]
+  204. C0018563 CHD C1861349 HPO : Absence of the distal interphalangeal flexion creases of the fingers. [HPO:curators]
+  205. C0018563 CHD C1861248 HPO : Telangiectasia (small dilated blood vessels) located in the fingerpads at the tips of the fingers. [HPO:curators]
+  206. C0018563 CHD C1835573 HPO : A delay in the process of formation and maturation of the epiphysis of one or more long bones. [HPO:probinson]
+  207. C0018563 CHD C1856742 HPO : Malalignement of carpal bone angles either with respect to each other, to the corresponding metacarpals or with respect to the wrist (radius and ulna). [HPO:sdoelken]
+  208. C0018563 CHD C0039520 MSH : Inflammation of the synovial lining of a tendon sheath. Causes include trauma, tendon stress, bacterial disease (gonorrhea, tuberculosis), rheumatic disease, and gout. Common sites are the hand, wrist, shoulder capsule, hip capsule, hamstring muscles, and Achilles tendon. The tendon sheaths become inflamed and painful, and accumulate fluid. Joint mobility is usually reduced.
+  209. C0018563 CHD C1840088 HPO : An abnormal limitation of the mobility of the wrist. [HPO:probinson]
+  210. C0018563 CHD C0162298 NCI : A sensation of discomfort and tightness while moving a joint. Typically there is decreased joint range of motion. Causes include arthritis, joint overuse, joint injury, and the aging process.
+  211. C0018563 CHD C0162298 HPO : Joint stiffness is a perceived sensation of tightness in a joint or joints when attempting to move them after a period of inactivity. Joint stiffness typically subsides over time. [HPO:probinson]
+  212. C0018563 CHD C0162298 NCI_NICHD : A feeling of tension or tightness in one or more joints.
+  213. C0018563 CHD C0162298 CSP : rigidity, resistance or inflexibility of the joints.
+  214. C0018563 CHD C1849152 HPO : A swan neck deformity describes a finger with a hyperextended PIP joint and a flexed DIP joint. The most common cause for a swan neck-like deformity is a disruption of the end of the extensor tendon. Conditions that loosen the PIP joint and allow it to hyperextend, for example conditions that weaken the volar plate, can produce a swan neck deformity of the finger. One example is rheumatoid arthritis. Another cause are conditions that tighten up the small (intrinsic) muscles of the hand and fingers, for example hand trauma or nerve disorders, such as cerebral palsy, Parkinson's disease, or stroke. [HPO:curators]
+  215. C0018563 CHD C1854952 HPO : The presence of short and wide phalanges which taper distally (bullet shaped")." [HPO:curators]
+  216. C0018563 CHD C1836212 HPO : Fusion of the proximal and middle phalanges of the 5th finger. [HPO:curators]
+  217. C0018563 CHD C1857632 HPO : For children from birth to 4 years of age, the palm width is more than 2 SD below the mean; for children from 4 to 16 years of age the palm width is below the 5th centile; or, the width of the palm appears disproportionately narrow for its length. [pmid:19125433]
+  218. C0018563 CHD C1865036 HPO : Abnormally large size of the epiphyses of the phalanges of the fingers with respect to age-dependent norms. [HPO:curators]
+  219. C0018563 CHD C1850048 HPO : Absence of the proximal interphalangeal flexion creases of the fingers. [HPO:probinson]
+  220. C0018563 CHD C0575803 HPO : An abnormal position of the hand in which the wrist is bent toward the radius (i.e., toward the thumb). [HPO:probinson]
+  221. C0018563 CHD C3887496 HPO : A developmental defect resulting in the presence of fewer than the normal number of digits. [HPO:probinson]
+  222. C0018563 CHD C1847408 HPO : Disproportionately short middle and distal phalanges compared to the hand/foot. [HPO:probinson]
+  223. C0018563 CHD C1854787 HPO : All of the metacarpal bones of the hand have a pointed proximal appearance. [HPO:curators]
+  224. C0018563 CHD C1859368 HPO : The distal interphalangeal joint and/or the proximal interphalangeal joint of the second to fifth fingers cannot be extended to 180 degrees by either active or passive extension. [HPO:probinson]
+  225. C0018563 CHD C1393871 HPO : Multiple bent (flexed) finger joints that cannot be straightened actively or passively. [HPO:probinson]
+  226. C0018563 CHD C1862158 HPO : The term distal symphalangism refers to a bony fusion of the distal and middle phalanges of the digits of the hand, in other words the distal interphalangeal joint (DIJ) is missing which can be seen either on x-rays or as an absence of the distal interphalangeal finger creases. [HPO:sdoelken]
+  227. C0018563 CHD C1856912 HPO : Short (hypoplastic middle phalanx of finger, affecting all fingers. [HPO:probinson]
+  228. C0018563 CHD C1843108 HPO : Short palm. [HPO:probinson, pmid:19125433]
+  229. C0018563 CHD C1844846 HPO : Point-shaped (punctate) calcifications affecting the carpal bones. [HPO:curators]
+  230. C0018563 CHD C0345354 HPO : A form of polydactyly in which the extra digit or digits are localized on the side of the thumb or great toe. [HPO:probinson]
+  231. C0018563 CHD C1865035 HPO : Abnormally large size of the metaphyseal epiphyses. [HPO:curators]
+  232. C0018563 CHD C1865572 HPO : Proximal mislocalization of the thumb. [HPO:probinson, pmid:19125433]
+  233. C0018563 CHD C1847189 HPO : Congenital absence of the scaphoid.. [DDD:jcampbell]
+  234. C0018563 CHD C0917990 HPO : Dissolution or degeneration of bone tissue of the phalanges of the hand. [HPO:curators]
+  235. C0018563 CHD C0917990 MSH : A condition with congenital and acquired forms causing recurrent ulcers in the fingers and toes. The congenital form exhibits autosomal dominant inheritance; the acquired form is found in workers who handle VINYL CHLORIDE. When acro-osteolysis is accompanied by generalized OSTEOPOROSIS and skull deformations, it is called HAJDU-CHENEY SYNDROME.
+  236. C0018563 CHD C1863402 HPO : Increased width of the distal phalanx of thumb. [HPO:sdoelken]
+  237. C0018563 CHD C0426874 HPO : A hand in which the fingers are of nearly equal length and deflected at the first interphalangeal joint, so as to give a forklike shape consisting of separation of the first and second as well as the third and fourth digits. [HPO:probinson]
+  238. C0018563 CHD C0265610 HPO : An angulation of a digit at an interphalangeal joint in the plane of the palm (finger) or sole (toe). [pmid:16252026]
+  239. C0018563 CHD C1865037 HPO : Cone-shaped epiphyses (also known as coned epiphyses) are epiphyses that invaginate into cupped metaphyses. That is, the epiphysis has a cone-shaped distal extension resulting from increased growth of the central portion of the epiphysis relative to its periphery. [HPO:probinson]
+  240. C0018563 CHD C0265554 HPO : A condition in which middle parts of the hands and/or feet (digits and meta-carpals and -tarsals) are missing giving a cleft appearance. The severity is very variable ranging from slightly hypoplastic 3rd toe/fingers over absent 2nd or 3rd toes/fingers as far as oligo- or monodactyl hands and/or feet. [HPO:sdoelken]
+  241. C0018563 CHD C1862097 HPO : A morphological abnormality of distal phalanges such that they have the appearance of chess pawns. [HPO:probinson]
+  242. C0018563 CHD C1868573 HPO : Fusion of the terminal/distal and middle phalanges of the 5th finger. [HPO:curators]
+  243. C0018563 CHD C1862142 HPO : Hypoplasia of the second finger, also known as the index finger. [HPO:sdoelken]
+  244. C0018563 CHD C1838167 HPO : Telangiectases in the area of the nails. [HPO:probinson]
+  245. C0018563 CHD C1844906 HPO : Increased width of a non-thumb digit of the hand. [pmid:19125433]
+  246. C0018563 CHD C1857651 HPO : Sclerosis of the epiphyses of the phalanges of the fingers, leading to an increased degree of radiopacity (white or ivory appearance) in X-rays. [HPO:curators]
+  247. C0018563 CHD C3714598 MSH : The region of the HAND between the WRIST and the FINGERS.
+  248. C0018563 CHD C0043262 SNOMEDCT_US : The body part defined by the wrist joint and surrounding structures
+  249. C0018563 CHD C0043262 NCI : The area of the body located between the antebrachial and metacarpal regions.
+  250. C0018563 CHD C0043262 CSP : region of the upper limb between the forearm and the hand.
+  251. C0018563 CHD C0043262 MSH : The region of the upper limb between the metacarpus and the FOREARM.
+  252. C0018563 CHD C0546964 NCI : An abnormal alignment of the knee backwards that is due to a deformity in the knee joint.
+  253. C0018563 CHD C0546964 HPO : An abnormally increased extension of the knee joint, so that the knee can bend backwards. [HPO:probinson, pmid:9580896]
+  254. C0018563 CHD C1833222 HPO : Spontaneous detachment (amputation) of an appendage from the body. [HPO:probinson]
+  255. C0018563 CHD C0018862 HPO : Bony swelling of the distal interphalangeal joint (DIP) associated with the formation of osteophytes (calcific spurs) of the articular (joint) cartilage thzat are visible radiographically. [HPO:probinson, pmid:10531070, pmid:9709182]
+  256. C0018563 CHD C1969237 HPO : A reduction in diameter of the distal phalanx of finger towards the distal end. [HPO:probinson]
+  257. C0018563 CHD C1969397 HPO : Short second metacarpal bone because of developmental hypoplasia. [HPO:probinson]
+  258. C0018563 CHD C1968816 HPO : Increased width of the distal segment of a finger. [pmid:19125433]
+  259. C0018563 CHD C1833328 HPO : Increased size of epiphyses. [HPO:probinson]
+  260. C0018563 CHD C0026846 GO : A process, occurring in the muscle, that is characterized by a decrease in protein content, fiber diameter, force production and fatigue resistance in response to different conditions such as starvation, aging and disuse. [GOC:mtg_muscle]
+  261. C0018563 CHD C0026846 NCI_NCI-GLOSS : A weakening, shrinking, and loss of muscle caused by disease or lack of use. Muscle wasting decreases strength and the ability to move.
+  262. C0018563 CHD C0026846 NCI : The loss of muscle tissue due to inactivity or disease.
+  263. C0018563 CHD C0026846 MSH : Derangement in size and number of muscle fibers occurring with aging, reduction in blood supply, or following immobilization, prolonged weightlessness, malnutrition, and particularly in denervation.
+  264. C0018563 CHD C0007286 NCI : Entrapment of the median nerve in the wrist that is characterized by numbness, tingling and painful movement.
+  265. C0018563 CHD C0007286 MEDLINEPLUS : <p>You're working at your desk, trying to ignore the tingling or numbness you've had for some time in your <a href='https://www.nlm.nih.gov/medlineplus/handinjuriesanddisorders.html'>hand</a> and <a href='https://www.nlm.nih.gov/medlineplus/wristinjuriesanddisorders.html'>wrist</a>. Suddenly, a sharp, piercing pain shoots through the wrist and up your arm. Just a passing cramp? It could be carpal tunnel syndrome.</p> <p>The carpal tunnel is a narrow passageway of ligament and bones at the base of your hand. It contains nerve and tendons. Sometimes, thickening from irritated tendons or other swelling narrows the tunnel and causes the nerve to be compressed. Symptoms usually start gradually. As they worsen, grasping objects can become difficult.</p> <p>Often, the cause is having a smaller carpal tunnel than other people do. Other causes include performing assembly line work, wrist injury, or swelling due to certain diseases, such as rheumatoid arthritis. Women are three times more likely to have carpal tunnel syndrome than men.</p> <p>Early diagnosis and treatment are important to prevent permanent nerve damage. Your doctor diagnoses carpal tunnel syndrome with a physical exam and special nerve tests. Treatment includes resting your hand, splints, pain and anti-inflammatory medicines, and sometimes surgery. </p> <p >NIH: National Institute of Neurological Disorders and Stroke</p>
+  266. C0018563 CHD C0007286 MSH : Entrapment of the MEDIAN NERVE in the carpal tunnel, which is formed by the flexor retinaculum and the CARPAL BONES. This syndrome may be associated with repetitive occupational trauma (CUMULATIVE TRAUMA DISORDERS); wrist injuries; AMYLOID NEUROPATHIES; rheumatoid arthritis (see ARTHRITIS, RHEUMATOID); ACROMEGALY; PREGNANCY; and other conditions. Symptoms include burning pain and paresthesias involving the ventral surface of the hand and fingers which may radiate proximally. Impairment of sensation in the distribution of the median nerve and thenar muscle atrophy may occur. (Joynt, Clinical Neurology, 1995, Ch51, p45)
+  267. C0018563 CHD C0007286 CSP : entrapment of the median nerve in the carpal tunnel, which is formed by the flexor retinaculum and the carpal bones; this syndrome may be associated with repetitive occupational trauma, wrist injuries, amyloid neuropathies, rheumatoid arthritis, acromegaly, pregnancy, and other conditions; symptoms include burning pain and paresthesias involving the ventral surface of the hand and fingers which may radiate proximally; impairment of sensation in the distribution of the median nerve and thenar muscle atrophy may occur.
+  268. C0018563 CHD C1837082 HPO : Metaphyseal cupping refers to an inward bulging of the metaphyseal profile giving the metaphysis a cup-like appearance. [HPO:probinson]
+  269. C0018563 CHD C1854912 HPO : One or more abnormally short long bone. [HPO:probinson]
+  270. C0018563 SIB C0013769 MSH : Region of the body immediately surrounding and including the ELBOW JOINT.
+  271. C0018563 SIB C0013769 CSP : hinge joint between the forearm and upper arm and the corresponding joint in the forelimb.
+  272. C0018563 SIB C0043262 SNOMEDCT_US : The body part defined by the wrist joint and surrounding structures
+  273. C0018563 SIB C0043262 NCI : The area of the body located between the antebrachial and metacarpal regions.
+  274. C0018563 SIB C0043262 CSP : region of the upper limb between the forearm and the hand.
+  275. C0018563 SIB C0043262 MSH : The region of the upper limb between the metacarpus and the FOREARM.
+  276. C0018563 SIB C0037004 SNOMEDCT_US : The body part defined by the shoulder joint and its surrounding structures
+  277. C0018563 SIB C0037004 NCI : The region of the body between the neck and the upper arm.
+  278. C0018563 SIB C0037004 NCI_CDISC : The region of the body between the neck and the upper arm. (NCI)
+  279. C0018563 SIB C0037004 MSH : Part of the body in humans and primates where the arms connect to the trunk. The shoulder has five joints; ACROMIOCLAVICULAR joint, CORACOCLAVICULAR joint, GLENOHUMERAL joint, scapulathoracic joint, and STERNOCLAVICULAR joint.
+  280. C0018563 SIB C0037004 NCI_NICHD : The region of the body between the neck and the upper arm. (NCI)
+  281. C0018563 SIB C0037004 CSP : junction of the arm and trunk; also that part of the trunk which is bounded at the back by the scapula.
+  282. C0018563 SIB C0446516 SNOMEDCT_US : Upper extremity between shoulder and elbow
+  283. C0018563 SIB C0446516 NCI : The portion of the upper extremity between the shoulder and the elbow. For clinical purposes this term is also used to refer to the whole superior limb.
+  284. C0018563 SIB C0446516 NCI_CDISC : The portion of the upper extremity between the shoulder and the elbow. For clinical purposes this term is also used to refer to the whole superior limb. (NCI)
+  285. C0018563 SIB C0446516 NCI_NICHD : The portion of the upper extremity between the shoulder and the elbow. For clinical purposes this term is also used to refer to the whole superior limb. (NCI)
+  286. C0018563 SIB C0446516 MSH : The superior part of the upper extremity between the SHOULDER and the ELBOW.
+  287. C0018563 SIB C0016536 NCI : The structure on the upper limb, between the elbow and the wrist.
+  288. C0018563 SIB C0016536 NCI_CDISC : The structure on the upper limb, between the elbow and the wrist. (NCI)
+  289. C0018563 SIB C0016536 MSH : Part of the arm in humans and primates extending from the ELBOW to the WRIST.
+  290. C0018563 SIB C0016536 NCI_NICHD : The structure on the upper limb, between the elbow and the wrist. (NCI)
+  291. C0018563 SIB C0004454 NCI_NCI-GLOSS : The underarm or armpit.
+  292. C0018563 SIB C0004454 NCI_CDISC : The underside concavity where the arm and the shoulder are joined. (NCI)
+  293. C0018563 SIB C0004454 NCI_NCI-GLOSS : Pertaining to the armpit area, including the lymph nodes that are located there.
+  294. C0018563 SIB C0004454 NCI : The underside concavity where the arm and the shoulder are joined.
+  295. C0018563 SIB C0004454 MSH : Area of the human body underneath the SHOULDER JOINT, also known as the armpit or underarm.
+  296. C0018563 SIB C0004454 NCI_NICHD : The underside concavity where the arm and the shoulder are joined. (NCI)
+  297. C0018563 SIB C0016504 MSH : The distal extremity of the leg in vertebrates, consisting of the tarsus (ANKLE); METATARSUS; phalanges; and the soft tissues surrounding these bones.
+  298. C0018563 SIB C0016504 NCI : The structure found below the ankle joint required for locomotion.
+  299. C0018563 SIB C0016504 NCI_CDISC : The structure found below the ankle joint required for locomotion. (NCI)
+  300. C0018563 SIB C0016504 NCI_NICHD : The structure found below the ankle joint required for locomotion. (NCI)
+  301. C0018563 SIB C0016504 CSP : distal portion of the leg upon which one stands and walks; in humans it consists of the tarsus, metatarsus, and phalanges and the tissues encompassing them.
+  302. C0018563 RB C0446516 SNOMEDCT_US : Upper extremity between shoulder and elbow
+  303. C0018563 RB C0446516 NCI : The portion of the upper extremity between the shoulder and the elbow. For clinical purposes this term is also used to refer to the whole superior limb.
+  304. C0018563 RB C0446516 NCI_CDISC : The portion of the upper extremity between the shoulder and the elbow. For clinical purposes this term is also used to refer to the whole superior limb. (NCI)
+  305. C0018563 RB C0446516 NCI_NICHD : The portion of the upper extremity between the shoulder and the elbow. For clinical purposes this term is also used to refer to the whole superior limb. (NCI)
+  306. C0018563 RB C0446516 MSH : The superior part of the upper extremity between the SHOULDER and the ELBOW.
+  307. C0018563 RB C1140618 SNOMEDCT_US : Upper extremity, including shoulder, arm, forearm, wrist, and hand
+  308. C0018563 RB C1140618 NCI : The region of the body that includes the arm, the forearm, and hand.
+  309. C0018563 RB C1140618 NCI_NICHD : The region of the body that includes the arm, the forearm, and hand. (NCI)
+  310. C0018563 RB C1140618 NCI_CDISC : The region of the body that extends distal to the scapulohumeral joint.
+  311. C0018563 RB C1140618 MSH : The region of the upper limb in animals, extending from the deltoid region to the HAND, and including the ARM; AXILLA; and SHOULDER.
+  312. C0018563 RB C1140618 CSP : part of the upper extremity between the shoulder and wrist; includes forearm and upper arm.
+  313. C0018563 RB C0817635 FMA : Free limb, which is distal to the pectoral girdle and demarcated by the plane of the surface of the glenoid fossa from the pectoral girdle; together with the pectoral girdle, it constitutes the upper limb. Examples: There are only two instances, right and left free upper limbs.
+  314. C0018563 RB C0817635 UWDA : Free limb, which is distal to the pectoral girdle and demarcated by the plane of the surface of the glenoid fossa from the pectoral girdle; together with the pectoral girdle, it constitutes the upper limb. Examples: There are only two instances, right and left free upper limbs.
+  315. C0018563 RB C0037253 NCI_NCI-GLOSS : The framework that supports the soft tissues of vertebrate animals and protects many of their internal organs. The skeletons of vertebrates are made of bone and/or cartilage.
+  316. C0018563 RB C0037253 CSP : bones and cartilages of the body, including the joints.
+  317. C0018563 RB C0026860 NCI : The system of muscles, tendons, ligaments, bones, joints and associated tissues that move the body and maintain its form.
+  318. C0018563 RB C0026860 CSP : all of the muscles, the bones, and the cartilages of the body.
+  319. C0018563 RB C0026860 MSH : The MUSCLES, bones (BONE AND BONES), and CARTILAGE of the body.
+  320. C0018563 RN C0016129 FMA : Subdivision of the hand demarcated from the hand proper by the skin crease in line with the distal edge of finger webs. Examples: thumb, right middle finger, left little finger.
+  321. C0018563 RN C0016129 UWDA : Subdivision of the hand demarcated from the hand proper by the skin crease in line with the distal edge of finger webs. Examples: thumb, right middle finger, left little finger.
+  322. C0018563 RN C0016129 NCI_CDISC : Any of the digits of the hand. (NCI)
+  323. C0018563 RN C0016129 NCI : Any of the digits of the hand.
+  324. C0018563 RN C0016129 MSH : Four or five slender jointed digits in humans and primates, attached to each HAND.
+  325. C0018563 RN C0016129 NCI_NICHD : Any of the digits of the hand. (NCI)
+  326. C0018563 RN C0016129 CSP : one of the five digits of the hand.
+  327. C0018563 RN C0230373 NCI_CDISC : The undersurface of the hand. (NCI)
+  328. C0018563 RN C0230373 NCI : The undersurface of the hand.
+  329. C0018563 RN C0230373 NCI_NICHD : The undersurface of the hand. (NCI)
+  330. C0018563 RN C0040067 NCI_CDISC : The thick and short hand digit which is next to the index finger in humans. (NCI)
+  331. C0018563 RN C0040067 NCI : The thick and short hand digit which is next to the index finger in humans.
+  332. C0018563 RN C0040067 MSH : The first digit on the radial side of the hand which in humans lies opposite the other four.
+  333. C0018563 RN C0040067 NCI_NICHD : The thick and short hand digit which is next to the index finger in humans. (NCI)
+  334. C0018563 RN C0230388 NCI : The second finger from the radial side of the hand, next to the thumb.
+  335. C0018563 RN C0230388 NCI_CDISC : The second finger from the radial side of the hand, next to the thumb. (NCI)
+  336. C0018563 RN C0230388 NCI_NICHD : The second finger from the radial side of the hand, next to the thumb. (NCI)
+  337. C0018563 RN C0230403 NCI : The fifth and smallest finger from the radial side of the hand.
+  338. C0018563 RN C0230403 NCI_CDISC : The fifth and smallest finger from the radial side of the hand. (NCI)
+  339. C0018563 RN C0230403 NCI_NICHD : The fifth and smallest finger from the radial side of the hand. (NCI)
+  340. C0018563 RN C0230393 NCI_CDISC : The middle or third finger from the radial side of the hand. (NCI)
+  341. C0018563 RN C0230393 NCI : The middle or third finger from the radial side of the hand.
+  342. C0018563 RN C0230393 NCI_NICHD : The middle or third finger from the radial side of the hand. (NCI)
+  343. C0018563 RN C0230398 NCI : The fourth finger from the radial side of the hand.
+  344. C0018563 RN C0230398 NCI_CDISC : The fourth finger from the radial side of the hand. (NCI)
+  345. C0018563 RN C0230398 NCI_NICHD : The fourth finger from the radial side of the hand. (NCI)
+  346. C0018563 RN C0222224 NCI : The skin covering the distal portion of the upper extremity.
+  347. C0018563 RN C0222229 SNOMEDCT_US : Skin region including some skin of finger AND some additional non finger skin
+  348. C0018563 RN C0448064 MSH : The CARPAL BONES; METACARPAL BONES; and FINGER PHALANGES. In each hand there are eight carpal bones, five metacarpal bones, and 14 phalanges.
+  349. C0018563 RN C0459470 MSH : The articulations extending from the WRIST distally to the FINGERS. These include the WRIST JOINT; CARPAL JOINTS; METACARPOPHALANGEAL JOINT; and FINGER JOINT.
+  350. C0018563 RN C0223792 NCI_CDISC : A bone of the hand. (NCI)
+  351. C0018563 RN C0223792 NCI : A bone of the hand.
+  352. C0018563 RN C0223792 NCI_NICHD : A bone of the hand. (NCI)
+  353. C0018563 RN C0223792 MSH : Bones that make up the SKELETON of the FINGERS, consisting of two for the THUMB, and three for each of the other fingers.
+  354. C0018563 RN C0222494 SNOMEDCT_US : Subcutaneous tissue including some tissue of finger AND some additional non finger tissue
+  355. C0018563 RN C0025526 NCI : Any of the five bones between the wrist and the fingers that form the skeleton of the palm.
+  356. C0018563 RN C0025526 NCI_CDISC : Any of the five bones between the wrist and the fingers that form the skeleton of the palm. (NCI)
+  357. C0018563 RN C0025526 NCI_NICHD : Any of the five bones between the wrist and the fingers that form the skeleton of the palm. (NCI)
+  358. C0018563 RN C0025526 MSH : The five cylindrical bones of the METACARPUS, articulating with the CARPAL BONES proximally and the PHALANGES OF FINGERS distally.
+  359. C0018563 RO C0025526 NCI : Any of the five bones between the wrist and the fingers that form the skeleton of the palm.
+  360. C0018563 RO C0025526 NCI_CDISC : Any of the five bones between the wrist and the fingers that form the skeleton of the palm. (NCI)
+  361. C0018563 RO C0025526 NCI_NICHD : Any of the five bones between the wrist and the fingers that form the skeleton of the palm. (NCI)
+  362. C0018563 RO C0025526 MSH : The five cylindrical bones of the METACARPUS, articulating with the CARPAL BONES proximally and the PHALANGES OF FINGERS distally.
+  363. C0018563 RO C0223792 NCI_CDISC : A bone of the hand. (NCI)
+  364. C0018563 RO C0223792 NCI : A bone of the hand.
+  365. C0018563 RO C0223792 NCI_NICHD : A bone of the hand. (NCI)
+  366. C0018563 RO C0223792 MSH : Bones that make up the SKELETON of the FINGERS, consisting of two for the THUMB, and three for each of the other fingers.
+  367. C0018563 RO C1879948 NCI : The terminology subset that includes terms pertaining to the CDISC Study Data Tabulation Model (SDTM).
+  368. C0018563 RO C1880104 NCI : The terminology that includes terms relevant to the Clinical Data Interchange Standards Consortium.
+  369. C0018563 RO C2698638 NCI : The terminology subset that includes terms relevant to the Clinical Data Interchange Standards Consortium (CDISC) Standard for Exchange of Non-clinical Data (SEND) group.
+  370. C0018563 RO C2698620 NCI : Terminology codelist used with Anatomical Locations within the Clinical Data Interchange Standards Consortium Study Data Tabulation Model.
+  371. C0018563 RO C2698620 NCI_CDISC : Terminology codelist used for anatomical location within CDISC.
+  372. C0018563 RO C2698634 NCI : A terminology set that includes concepts relevant to CDISC SEND biospecimens.
+  373. C0018563 RO C2698634 NCI_CDISC : Terminology related to any material sample taken from a biological entity.
+  374. C0018563 RO C0229962 FMA : Anatomical structure, which has as its direct parts instances of anatomical sets of organs and cardinal organ parts spatially associated with either the skull, vertebral column, or the skeleton of a limb; in their aggregate are surrounded by a part of the skin Examples: Head, body proper, right upper limb.
+  375. C0018563 RO C0229962 UWDA : Anatomical structure, which consists of a maximal set of diverse subclasses of organ and organ part spatially associated with either the skull, a segment of the vertebral column or a complete set of bones of the appendicular skeleton; it is partially surrounded by skin and forms a distinct morphological subdivision of the body; together with all other body parts, a body part constitutes the human body. Examples: Canonical instances are limited to head, neck, trunk, and the limbs.
+  376. C0018563 RO C0229962 NCI : Any part of an organism.
+  377. C0018563 RO C0229962 MSH : Parts of the human body viewed from a philosophical or social perspective.
+  378. C0018563 RO C0043262 SNOMEDCT_US : The body part defined by the wrist joint and surrounding structures
+  379. C0018563 RO C0043262 NCI : The area of the body located between the antebrachial and metacarpal regions.
+  380. C0018563 RO C0043262 CSP : region of the upper limb between the forearm and the hand.
+  381. C0018563 RO C0043262 MSH : The region of the upper limb between the metacarpus and the FOREARM.
+  382. C0018563 RO C2983498 NCI : Core library of terms associated with pediatrics, representing information related to child health and development from pre-birth through 21 years of age; contributed by the National Institute of Child Health and Human Development.
+  383. C0018563 RO C2982886 NCI : Terminology for concepts associated with neonatal and infant examination contributed by the National Institute of Child Health and Human Development.
+  384. C0018563 RO C0016539 MSH : The forepart of the foot including the metatarsals and the TOES.
+  385. C0018563 RO C0265594 HPO : The total absence of the hand, with no bony elements distal to the radius or ulna. [pmid:19125433]
+  386. C0018563 RO C1269782 NCI : The five bones that form the tips of the fingers.
+  387. C0018563 RO C0223828 NCI : One of four finger bones located between, and articulating with, a proximal phalange and a distal phalange.
+  388. C0018563 RO C1711344 NCI : A bone in the thick, short finger next to the index finger.
+  389. C0018563 RO C0040067 NCI_CDISC : The thick and short hand digit which is next to the index finger in humans. (NCI)
+  390. C0018563 RO C0040067 NCI : The thick and short hand digit which is next to the index finger in humans.
+  391. C0018563 RO C0040067 MSH : The first digit on the radial side of the hand which in humans lies opposite the other four.
+  392. C0018563 RO C0040067 NCI_NICHD : The thick and short hand digit which is next to the index finger in humans. (NCI)
+  393. C0018563 RO C1708312 NCI : A bone in the second finger from the radial side of the hand, next to the thumb
+  394. C0018563 RO C0230388 NCI : The second finger from the radial side of the hand, next to the thumb.
+  395. C0018563 RO C0230388 NCI_CDISC : The second finger from the radial side of the hand, next to the thumb. (NCI)
+  396. C0018563 RO C0230388 NCI_NICHD : The second finger from the radial side of the hand, next to the thumb. (NCI)
+  397. C0018563 RO C1708314 NCI : A bone in the middle or third finger from the radial side of the hand.
+  398. C0018563 RO C0230393 NCI_CDISC : The middle or third finger from the radial side of the hand. (NCI)
+  399. C0018563 RO C0230393 NCI : The middle or third finger from the radial side of the hand.
+  400. C0018563 RO C0230393 NCI_NICHD : The middle or third finger from the radial side of the hand. (NCI)
+  401. C0018563 RO C1708316 NCI : A bone in the fourth finger from the radial side of the hand.
+  402. C0018563 RO C0230398 NCI : The fourth finger from the radial side of the hand.
+  403. C0018563 RO C0230398 NCI_CDISC : The fourth finger from the radial side of the hand. (NCI)
+  404. C0018563 RO C0230398 NCI_NICHD : The fourth finger from the radial side of the hand. (NCI)
+  405. C0018563 RO C1708317 NCI : A bone in the fifth and smallest finger from the radial side of the hand.
+  406. C0018563 RO C0230403 NCI : The fifth and smallest finger from the radial side of the hand.
+  407. C0018563 RO C0230403 NCI_CDISC : The fifth and smallest finger from the radial side of the hand. (NCI)
+  408. C0018563 RO C0230403 NCI_NICHD : The fifth and smallest finger from the radial side of the hand. (NCI)
+  409. C0018563 RO C1708318 NCI : The skin covering the fingers or appendages of the hand.
+  410. C0018563 RO C0222224 NCI : The skin covering the distal portion of the upper extremity.
+  411. C0018563 RO C0016129 FMA : Subdivision of the hand demarcated from the hand proper by the skin crease in line with the distal edge of finger webs. Examples: thumb, right middle finger, left little finger.
+  412. C0018563 RO C0016129 UWDA : Subdivision of the hand demarcated from the hand proper by the skin crease in line with the distal edge of finger webs. Examples: thumb, right middle finger, left little finger.
+  413. C0018563 RO C0016129 NCI_CDISC : Any of the digits of the hand. (NCI)
+  414. C0018563 RO C0016129 NCI : Any of the digits of the hand.
+  415. C0018563 RO C0016129 MSH : Four or five slender jointed digits in humans and primates, attached to each HAND.
+  416. C0018563 RO C0016129 NCI_NICHD : Any of the digits of the hand. (NCI)
+  417. C0018563 RO C0016129 CSP : one of the five digits of the hand.
+  418. C0018563 RO C0230373 NCI_CDISC : The undersurface of the hand. (NCI)
+  419. C0018563 RO C0230373 NCI : The undersurface of the hand.
+  420. C0018563 RO C0230373 NCI_NICHD : The undersurface of the hand. (NCI)
+  421. C0018563 RO C1140618 SNOMEDCT_US : Upper extremity, including shoulder, arm, forearm, wrist, and hand
+  422. C0018563 RO C1140618 NCI : The region of the body that includes the arm, the forearm, and hand.
+  423. C0018563 RO C1140618 NCI_NICHD : The region of the body that includes the arm, the forearm, and hand. (NCI)
+  424. C0018563 RO C1140618 NCI_CDISC : The region of the body that extends distal to the scapulohumeral joint.
+  425. C0018563 RO C1140618 MSH : The region of the upper limb in animals, extending from the deltoid region to the HAND, and including the ARM; AXILLA; and SHOULDER.
+  426. C0018563 RO C1140618 CSP : part of the upper extremity between the shoulder and wrist; includes forearm and upper arm.
+  427. C0018563 RO C0448064 MSH : The CARPAL BONES; METACARPAL BONES; and FINGER PHALANGES. In each hand there are eight carpal bones, five metacarpal bones, and 14 phalanges.
+  428. C0018563 RO C0817635 FMA : Free limb, which is distal to the pectoral girdle and demarcated by the plane of the surface of the glenoid fossa from the pectoral girdle; together with the pectoral girdle, it constitutes the upper limb. Examples: There are only two instances, right and left free upper limbs.
+  429. C0018563 RO C0817635 UWDA : Free limb, which is distal to the pectoral girdle and demarcated by the plane of the surface of the glenoid fossa from the pectoral girdle; together with the pectoral girdle, it constitutes the upper limb. Examples: There are only two instances, right and left free upper limbs.
+  430. C0018563 CUI C0018563 NCI_CDISC : The distal portion of the upper extremity. It consists of the carpus, metacarpus, and digits. (NCI)
+  431. C0018563 CUI C0018563 NCI : The distal portion of the upper extremity. It consists of the carpus, metacarpus, and digits.
+  432. C0018563 CUI C0018563 MSH : The distal part of the arm beyond the wrist in humans and primates, that includes the palm, fingers, and thumb.
+  433. C0018563 CUI C0018563 NCI_NICHD : The distal portion of the upper extremity. It consists of the carpus, metacarpus, and digits. (NCI)
+  434. C0018563 CUI C0018563 CSP : part of the upper limb distal to the wrist including carpus, metacarpus and fingers.
+  435. C0018563 TERM C0018563 CHV : hand
+  436. C0018563 TERM C0018563 CSP : hand
+  437. C0018563 TERM C0018563 SNOMEDCT_US : hand, nos
+  438. C0018563 TERM C0018563 NCI_CDISC : hand
+  439. C0018563 TERM C0018563 LCH : hand
+  440. C0018563 TERM C0018563 MSH : hands
+  441. C0018563 TERM C0018563 MTH : hand
+  442. C0018563 TERM C0018563 OMIM : hands
+  443. C0018563 TERM C0018563 CHV : manus
+  444. C0018563 TERM C0018563 AOD : hand
+  445. C0018563 TERM C0018563 NCI : hand
+  446. C0018563 TERM C0018563 MSH : hand
+  447. C0018563 TERM C0018563 NCI_NICHD : hand
+  448. C0018563 TERM C0018563 HL7V2.5 : hand
+  449. C0018563 TERM C0018563 CHV : hand structure
+  450. C0018563 TERM C0018563 FMA : hand
+  451. C0018563 TERM C0018563 UWDA : hand
+  452. C0018563 TERM C0018563 LNC : hand
+  453. C0018563 TERM C0018563 FMA : terminal segment of free upper limb
+  454. C0018563 TERM C0018563 CHV : hands
+  455. C0018563 TERM C0018563 FMA : manus
+  456. C0018563 TERM C0018563 SNOMEDCT_US : hand
+  457. C0018563 TERM C0018563 UWDA : manus
+  458. C0018563 TERM C0018563 LCH_NW : hand

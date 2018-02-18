@@ -1,0 +1,1212 @@
+=head1 reConfig
+
+=head2 description:
+
+function to re-initialize the interface configuration parameters
+
+=head2 input:
+   
+ $hash -> reference to hash containing parameters 
+
+=head2 output:
+
+=head2 example:
+
+ $umls->reConfig(\%parameters);
+  
+=head1 root 
+
+=head2 description:
+
+ returns the root
+
+=head2 input:   
+	
+=head2 output:
+
+ $string -> string containing the root
+
+=head2 example:
+
+ my $root = $umls->root();
+ 
+=head1 version
+
+=head2 description:
+
+returns the version of the UMLS currently being used
+
+=head2 input:   
+	 
+=head2 output:
+
+ $version -> string containing the version
+
+=head2 example:
+
+ my $version = $umls->version();
+      
+=head1 getConfigParameters
+
+=head2 description:
+
+returns the SAB/REL or SABDEF/RELDEF parameters set in the configuration file
+
+=head2 input:   
+	 
+=head2 output:
+
+ $hash <- reference to hash containing parameters in the 
+          configuration file - if there was not config
+          file the hash is empty and defaults are being
+          use
+
+=head2 example:
+
+ my $hash = $umls->getConfigParameters;
+
+=head1 getSabString
+
+=head2 description:
+
+returns the sab (SAB) information from the configuration file
+
+=head2 input:   
+	 
+=head2 output:
+
+ $string <- containing the SAB line from the config file
+
+=head2 example:
+
+ my $string = $umls->getSabString
+
+=head1 getRelString
+
+=head2 description:
+
+returns the relation (REL) information from the configuration file
+
+=head2 input:   
+	 
+=head2 output:
+
+ $string <- containing the REL line from the config file
+
+=head2 example:
+
+ my $string = $umls->getRelString
+
+=head1 getRelaString
+
+=head2 description:
+
+returns the rela (RELA) information from the configuration file
+
+=head2 input:   
+	 
+=head2 output:
+
+ $string <- containing the RELA line from the config fil
+
+=head2 example:
+
+ my $string = $umls->getRelaString
+
+=head1 getRelated
+
+=head2 description:
+
+function that returns a list of concepts (@concepts) related 
+to a concept $concept through a relation $rel
+
+=head2 input:   
+
+ $concept <- string containing cui
+ $rel     <- string containing a relation
+
+=head2 output:
+
+ $array   <- reference to an array of cuis
+
+=head2 example:
+	 
+ my $concept = "C0018563";
+ my $rel     = "SIB";
+	     my $array   = $umls->getRelated($concept, $rel);
+ foreach my $related_concept (@{$array}) { 
+	  print "$related_concept\n";
+ }
+
+=head1 getPreferredTerm
+
+=head2 description:
+
+function that returns the preferred term of a cui from the sources 
+specified in the configuration file
+
+=head2 input:   
+
+ $concept <- string containing cui
+
+=head2 output:
+
+ $string  <- string containing the preferred term
+
+=head2 example:
+	 
+ my $concept = "C0018563";
+ my $string  = $umls->getPreferredTerm($concept);
+ print "The preferred term of $concept is $string\n";
+
+=head1 getAllPreferredTerm
+
+=head2 description:
+
+ function that returns the preferred term of a cui from entire umls
+
+=head2 input:   
+
+ $concept <- string containing cui
+
+=head2 output:
+
+ $string  <- string containing the preferred term
+
+=head2 example:
+	 
+ my $concept = "C0018563";
+ my $string  = $umls->getPreferredTerm($concept);
+ print "The preferred term of $concept is $string\n";
+ 
+=head1 getTermList
+
+=head2 description:
+
+function to map terms to a given cui from the sources 
+specified in the configuration file using SAB
+
+=head2 input:   
+
+ $concept <- string containing cui
+
+=head2 output:
+
+ $array   <- reference to an array of terms (strings)
+
+=head2 example:
+	
+ my $concept = "C0018563";
+ my $array   = $umls->getTermList($concept);
+ print "The terms associated with $concept are:\n";
+ foreach my $term (@{$array}) { print "  $term\n"; }
+
+=head1 getDefTermList
+
+=head2 description:
+
+function to map terms to a given cui from the sources 
+specified in the configuration file using SABDEF
+
+=head2 input:   
+
+ $concept <- string containing cui
+
+=head2 output:
+
+ $array   <- reference to an array of terms (strings)
+
+=head2 example:
+	
+ my $concept = "C0018563";
+ my $array   = $umls->getDefTermList($concept);
+ print "The terms associated with $concept are:\n";
+ foreach my $term (@{$array}) { print "  $term\n"; }
+
+=head1 getAllTerms
+
+=head2 description:
+
+function to map terms from the entire UMLS to a given cui
+
+=head2 input:   
+
+ $concept <- string containing cui
+
+=head2 output:
+
+ $array   <- reference to an array containing terms (strings)
+
+=head2 example:
+	
+ my $concept = "C0018563";
+ my $array   = $umls->getAllTermList($concept);
+ print "The terms associated with $concept are:\n";
+ foreach my $term (@{$array}) { print "  $term\n"; }
+
+=head1 getConceptList
+
+=head2 description:
+
+function to maps a given term to a set cuis in the sources
+specified in the configuration file by SAB
+
+=head2 input:   
+
+ $term  <- string containing a term
+
+=head2 output:
+
+ $array <- reference to an array containing cuis
+
+=head2 example:
+	
+ my $term   = "hand";
+ my $array  = $umls->getConceptList($term);
+ print "The concept associated with $term are:\n";
+ foreach my $concept (@{$array}) { print "  $concept\n"; }
+
+=head1 getDefConceptList
+
+=head2 description:
+
+function to maps a given term to a set cuis in the sources
+specified in the configuration file by SABDEF
+
+=head2 input:   
+
+ $term  <- string containing a term
+
+=head2 output:
+
+ $array <- reference to an array containing cuis
+
+=head2 example:
+	
+ my $term   = "hand";
+ my $array  = $umls->getDefConceptList($term);
+ print "The concept associated with $term are:\n";
+ foreach my $concept (@{$array}) { print "  $concept\n"; }
+
+=head1 getAllConcepts
+
+=head2 description:
+
+function to maps a given term to a set cuis all the sources
+
+=head2 input:   
+
+ $term  <- string containing a term
+
+=head2 output:
+
+ $array <- reference to an array containing cuis
+
+=head2 example:
+	
+ my $term   = "hand";
+ my $array  = $umls->getAllConceptList($term);
+ print "The concept associated with $term are:\n";
+ foreach my $concept (@{$array}) { print "  $concept\n"; }
+
+=head1 getCompounds
+
+=head2 description:
+
+function returns all the compounds in the sources 
+specified in the configuration file
+
+=head2 input:   
+	
+=head2 output:
+
+ $hash <- reference to a hash containing cuis
+
+=head2 example:
+	 
+ my $hash = $umls->getCompounds();
+ foreach my $term (sort keys %{$hash}) {
+   print "$term\n";
+ }
+
+=head1 getCuiList    
+
+=head2 description:
+
+returns all of the cuis in the sources specified in the configuration file
+
+=head2 input:   
+	 
+=head2 output:
+
+ $hash <- reference to a hash containing cuis
+
+=head2 example:
+	 
+ my $hash = $umls->getCuiList();
+ foreach my $concept (sort keys %{$hash}) { 
+    print "$concept\n";
+ }
+
+=head1 getCuisFromSource
+
+=head2 description:
+
+returns the cuis from a specified source 
+
+=head2 input:   
+
+ $sab   <- string contain the sources abbreviation
+
+=head2 output:
+
+ $array <- reference to an array containing cuis
+
+=head2 example:
+	 
+ my $sab   = "MSH";
+ my $array = $umls->getCuisFromSource($sab);
+ foreach my $concept (@{$array}) { 
+   print "$concept\n";
+ }
+
+=head1 getSab
+
+=head2 description:
+
+takes as input: a cui and returns all of the sources in which it originated from 
+
+=head2 input:   
+
+ $concept <- string containing the cui 
+
+=head2 output:
+
+ $array   <- reference to an array contain the sources (abbreviations)
+
+=head2 example:
+	 
+ my $concept = "C0018563";	
+ my $array   = $umls->getSab($concept);
+ print "The concept ($concept) exist in sources:\n";
+ foreach my $sab (@{$array}) { print "  $sab\n"; }
+
+=head1 getChildren
+
+=head2 description:
+
+returns the children of a concept - the relations that are considered children 
+are predefined by the user in the configuration file. The default is the CHD 
+relation.
+
+=head2 input:   
+
+ $concept <- string containing cui
+
+=head2 output:
+
+ $array   <- reference to an array containing a list of cuis
+
+=head2 example:
+	 
+ my $concept  = "C0018563";	
+ my $children = $umls->getChildren($concept);
+ print "The children of $concept are:\n";
+ foreach my $child (@{$children}) { print "  $child\n"; }
+
+=head1 getParents
+
+=head2 description:
+
+returns the parents of a concept - the relations that are considered parents are 
+predefined by the user in the configuration file.The default is the PAR relation.
+
+=head2 input:   
+
+ $concept <- string containing cui
+
+=head2 output:
+
+ $array   <- reference to an array containing a list of cuis
+
+=head2 example:
+	 
+ my $concept  = "C0018563";	
+ my $parents  = $umls->getParents($concept);
+ print "The parents of $concept are:\n";
+ foreach my $parent (@{$parents}) { print "  $parent\n"; }
+
+=head1 getRelations
+
+=head2 description:
+
+returns the relations of a concept in the source specified by the user in the 
+configuration file
+
+=head2 input:   
+
+ $concept <- string containing a cui
+
+=head2 output:
+
+ $array   <- reference to an array containing strings of relations
+
+=head2 example:
+	
+ my $concept  = "C0018563";	
+ my $array    = $umls->getRelations($concept);
+ print "The relations associated with $concept are:\n";
+ foreach my $relation (@{$array}) { print "  $relation\n"; }
+
+=head1 getRelationsBetweenCuis
+
+=head2 description:
+
+returns the relations and its source between two concepts
+
+=head2 input:   
+
+ $concept1 <- string containing a cui
+ $concept2 <- string containing a cui
+
+=head2 output:
+
+ $array    <- reference to an array containing the relations
+
+=head2 example:
+
+ my $concept1  = "C0018563";
+ my $concept2  = "C0016129";
+ my $array     = $umls->getRelationsBetweenCuis($concept1,$concept2);
+ print "The relations between $concept1 and $concept2 are:\n";
+ foreach my $relation (@{$array}) { print "  $relation\n"; }
+
+=head1 getSemanticRelation
+
+=head2 description: 
+
+subroutine to get the relation(s) between two semantic types
+
+=head2 input:   
+
+ $st1   <- semantic type abbreviation
+ $st2   <- semantic type abbreviation
+
+=head2 output:
+
+ $array <- reference to an array of semantic relation(s)
+
+=head2 example:
+	
+ my $st1   = "blor";
+ my $st2   = "bpoc";
+ my $array = $umls->getSemanticRelation($st1,$st2);
+ print "The relations between $st1 and $st2 are:\n";
+ foreach my $relation (@{$array}) { print "  $relation\n"; }
+
+=head1 getSt
+
+=head2 description:
+
+returns the semantic type(s) of a given concept
+
+=head2 input:   
+	 $concept <- string containing a concept
+
+=head2 output:
+
+ $array   <- reference to an array containing the semantic type's TUIs
+             associated with the concept
+
+=head2 example:
+	
+ my $concept  = "C0018563";	
+ my $array    = $umls->getSts($concept);
+ print "The semantic types associated with $concept are:\n";
+ foreach my $st (@{$array}) { print "  $st\n"; }
+
+=head1 getSemanticGroup
+
+=head2 description:
+
+function returns the semantic group(s) associated with the concept
+
+=head2 input:   
+
+ $concept <- string containing cuis
+
+=head2 output:
+
+ $array   <- $array reference containing semantic groups
+
+=head2 example:
+	
+ my $concept  = "C0018563";	
+ my $array    = $umls->getSemanticGroup($concept);
+ print "The semantic group associated with $concept are:\n";
+ foreach my $sg (@{$array}) { print "  $sg\n"; }
+
+=head1 getStString
+
+=head2 description:
+
+returns the full name of a semantic type given its abbreviation
+
+=head2 input:   
+
+ $st     <- string containing the abbreviation of the semantic type
+
+=head2 output:
+
+ $string <- string containing the full name of the semantic type
+
+=head2 example:
+	
+ my $st     = "bpoc";
+ my $string = $umls->getStString($st);
+ print "The abbreviation $st stands for $string\n";
+
+=head1 getStAbr
+
+=head2 description:
+
+returns the abreviation of a semantic type given its TUI (UI)
+
+=head2 input:   
+
+ $tui    <- string containing the semantic type's TUI
+
+=head2 output:
+
+ $string <- string containing the semantic type's abbreviation
+
+=head2 example:
+	
+ my $tui    = "T023"
+ my $string = $umls->getStAbr($tui);
+ print "The abbreviation of $tui is $string\n";
+
+=head1 getStTui
+
+=head2 description:
+
+function to get the name of a semantic type's TUI given its abbrevation
+
+=head2 input:   
+
+ $string <- string containing the semantic type's abbreviation
+
+=head2 output:
+
+ $tui    <- string containing the semantic type's TUI
+
+=head2 example:
+	
+ my $string = "bpoc"
+ my $tui     = $umls->getStAbr($tui);
+ print "The tui of $string is $tui\n";
+
+=head1 getStDef
+
+=head2 description:
+
+returns the definition of the semantic type - expecting abbreviation
+
+=head2 input:   
+
+ $st     <- string containing the semantic type's abbreviation
+
+=head2 output:
+
+ $string <- string containing the semantic type's definition
+
+=head2 example:
+	
+ my $st     = "bpoc"
+ my $string = $umls->getStDef($st);
+ print "The definition of $st is $string\n";
+
+=head1 getExtendedDefinition
+
+=head2 description:
+
+returns the extended definition of a cui given the relation and source 
+information in the configuration file 
+
+=head2 input:   
+
+ $concept <- string containing a cui
+
+=head2 output:
+
+ $array   <- reference to an array containing the definitions
+
+=head2 example:
+	 
+ my $concept = "C0018563";	
+ my $array   = $umls->getExtendedDefinition($concept);
+ print "The extended definition of $concept is:\n";
+ foreach my $def (@{$array}) { print "  $def\n"; }
+
+=head1 getCuiDef
+
+=head2 description:
+
+returns the definition of the cui 
+
+=head2 input:   
+
+ $concept <- string containing a cui
+ $sabflag <- 0 | 1 whether to include the source in with the definition 
+
+=head2 output:
+
+ $array   <- reference to an array of definitions (strings)
+
+=head2 example:
+	 
+ my $concept = "C0018563";	
+ my $array   = $umls->getCuiDef($concept);
+ print "The definition of $concept is:\n";
+ foreach my $def (@{$array}) { print "  $def\n"; }
+
+=head1 validCui
+
+=head2 description:
+
+checks to see a CUI is valid
+
+=head2 input:   
+
+ $concept <- string containing a cui
+
+=head2 output:
+
+ 0 | 1    <- integer indicating if the cui is valide
+
+=head2 example:
+	 
+ my $concept = "C0018563";	
+ if($umls->validCui($concept)) { 
+   print "$concept is valid\n";
+ }
+
+=head1 exists
+
+=head2 description:
+
+function to check if a concept ID exists in the database.
+
+=head2 input:   
+
+ $concept <- string containing a cui
+
+=head2 output:
+
+ 1 | 0    <- integers indicating if the cui exists
+
+=head2 example:
+	 
+ my $concept = "C0018563";	
+ if($umls->exists($concept)) { 
+    print "$concept exists\n";
+ }
+
+=head1 returnTableNames
+
+=head2 description:
+
+returns the table names in both human readable and hex form
+
+=head2 input:   
+	 
+=head2 output:
+
+ $hash <- reference to a hash containin the table names 
+          in human readable and hex form
+
+=head2 example:
+
+	 my $hash = $umls->returnTableNames();
+	     
+=head1 dropConfigTable
+
+=head2 description:
+
+removes the configuration tables
+
+=head2 input:   
+	 
+=head2 output:
+
+=head2 example:
+
+ $umls->dropConfigTable();
+
+=head1 removeConfigFiles
+
+=head2 description:
+
+removes the configuration files
+
+=head2 input:   
+	
+=head2 output:
+ 
+=head2 example:
+
+ $umls->removeConfigFiles();
+
+=head1 depth
+
+=head2 description:
+
+function to return the maximum depth of a taxonomy.
+
+=head2 input:   
+	 
+=head2 output:
+
+ $string <- string containing the depth
+
+=head2 example:
+
+ my $string = $umls->depth();
+	   
+=head1 pathsToRoot
+
+=head2 description:
+
+function to find all the paths from a concept to the root node of the is-a taxonomy.
+
+=head2 input:   
+
+ $concept <- string containing cui
+
+=head2 output:
+
+ $array   <- array reference containing the paths
+
+=head2 example:
+	 
+ my $concept = "C0018563";	
+ my $array   = $umls->pathsToRoot($concept);
+ print "The paths to the root for $concept are:\n";
+ foreach my $path (@{$array}) { print "  $path\n"; }
+
+=head1 findMinimumDepth
+
+=head2 description:
+
+
+ function returns the minimum depth of a concept given the
+ sources and relations specified in the configuration file
+=head2 input:   
+
+ $concept <- string containing the cui
+
+=head2 output:
+
+ $int     <- string containing the depth of the cui
+
+=head2 example:
+	 
+ my $concept = "C0018563";	
+ my $int     = $umls->findMinimumDepth($concept);
+ print "The minimum depth of $concept is $int\n";
+
+=head1 findMaximumDepth
+
+=head2 description:
+
+returns the maximum depth of a concept given the sources and relations 
+specified in the configuration file
+
+=head2 input:   
+
+ $concept <- string containing the cui
+
+=head2 output:
+
+ $int     <- string containing the depth of the cui
+
+=head2 example:
+	 
+ my $concept = "C0018563";	
+ my $int     = $umls->findMaximumDepth($concept);
+ print "The maximum depth of $concept is $int\n";
+
+=head1 findNumberOfCloserConcepts
+
+=head2 description:
+
+function that finds the number of cuis closer to concept1 than concept2
+
+=head2 input:   
+
+ $concept1  <- the first concept
+ $concept2  <- the second concept
+
+=head2 output:
+
+ $int <- number of cuis closer to concept1 than concept2
+
+=head2 example:
+	 
+ my $concept1  = "C0018563";
+ my $concept2  = "C0016129";
+ my $int       = $umls->findNumberOfCloserConcepts($concept1,$concept2);
+ print "The number of closer concepts to $concept1 than $concept2 is $int\n";
+
+=head1 findShortestPathLength
+
+=head2 description:
+
+function that finds the length of the shortest path
+
+=head2 input:   
+
+ $concept1  <- the first concept
+ $concept2  <- the second concept
+
+=head2 output:
+
+ $int <- the length of the shortest path between them
+
+=head2 example:
+	 
+ my $concept1  = "C0018563";
+ my $concept2  = "C0016129";
+ my $int       =  $umls->findShortestPathLength($concept1,$concept2);
+ print "The shortest path length between $concept1 than $concept2 is $int\n";
+
+=head1 findShortestPath
+
+=head2 description:
+
+returns the shortest path between two concepts given the sources and 
+relations specified in the configuration file
+
+=head2 input:   
+
+ $concept1 <- string containing the first cui
+ $concept2 <- string containing the second
+
+=head2 output:
+
+ $array    <- reference to an array containing the shortest path(s)
+
+=head2 example:
+	 
+ my $concept1  = "C0018563";
+ my $concept2  = "C0016129";
+ my $array     = $umls->findShortestPath($concept1,$concept2);
+ print "The shortest path(s) between $concept1 than $concept2 are:\n";
+ foreach my $path (@{$array}) { print "  $path\n"; }
+
+=head1 findLeastCommonSubsumer   
+
+=head2 description:
+
+
+ returns the least common subsummer between two concepts given 
+  the sources and relations specified in the configuration file
+=head2 input:   
+	
+ $concept1 <- string containing the first cui
+ $concept2 <- string containing the second
+
+=head2 output:
+
+ $array    <- reference to an array containing the lcs(es)
+
+=head2 example:
+	 
+ my $concept1  = "C0018563";
+ my $concept2  = "C0016129";
+ my $array     = $umls->findLeastCommonSubsumer($concept1,$concept2);
+ print "The LCS(es) between $concept1 than $concept2 iare:\n";
+ foreach my $lcs (@{$array}) { print "  $lcs\n"; }
+
+=head1 setPropagationParameters
+
+=head2 description:
+
+sets the propagation counts 
+
+=head2 input:   
+
+ $hash <- reference to hash containing parameters
+          debug         -> turn debug option on 
+          icpropagation -> file containing icpropagation counts
+          icfrequency   -> file containing icfrequency counts
+          smooth        -> whether you want to smooth the frequency counts
+
+=head2 example:
+
+ $umls->setPropagationParameters(\%hash);
+
+=head1 getIC
+
+=head2 description:
+
+returns the information content of a given cui
+
+=head2 input:   
+
+ $concept <- string containing a cui
+
+=head2 output:
+
+ $double  <- double containing its IC
+
+=head2 example:
+	 
+ my $concept  = "C0018563";
+ my $double   = $umls->getIC($concept);
+ print "The IC of $concept is $double\n";
+ 
+=head1 getProbability
+
+=head2 description:
+
+returns the probability of a given cui
+
+=head2 input:   
+
+ $concept <- string containing a cui
+
+=head2 output:
+
+ $double  <- double containing its probability
+
+=head2 example:
+	 
+ my $concept  = "C0018563";
+ my $double   = $umls->getProbability($concept);
+ print "The probability of $concept is $double\n";
+
+=head1 getFrequency
+
+=head2 description:
+
+returns the propagation count (frequency) of a given cui
+
+=head2 input:   
+
+ $concept <- string containing a cui
+
+=head2 output:
+
+ $double  <- double containing its frequency
+
+=head2 example:
+	 
+ my $concept  = "C0018563";
+ my $double   = $umls->getFrequency($concept);
+ print "The frequency of $concept is $double\n";
+
+=head1 getN
+
+=head2 description:
+
+returns the total number of CUIs (N)
+
+=head2 input:   
+	 
+=head2 output:
+
+ $int  <- integer containing frequency
+
+=head2 example:
+
+ my $int = $umls->getN();
+
+=head1 getPropagationCuis
+
+=head2 description:
+
+returns all of the cuis to be propagated given the sources 
+and relations specified by the user in the configuration file
+
+=head2 input:   
+	
+=head2 output:
+
+ $hash <- reference to hash containing the cuis
+
+=head2 example:
+
+ my $hash = $umls->getPropagationCuis();
+
+=head1 propagateCounts
+
+=head2 description:
+
+propagates the given frequency counts
+
+=head2 input:   
+	 
+ $hash <- reference to the hash containing the frequency counts
+
+=head2 output:
+ 
+ $hash <- containing the propagation counts of all the cuis 
+          given the sources and relations specified in the 
+          configuration file
+
+=head2 example:
+
+ my $phash = $umls->propagateCounts(\%fhash);
+
+=head1 loadStPropagationHash
+
+=head2 description:
+
+load the propagation hash for the semantic network
+
+=head2 input:   
+
+ $hash  <- reference to a hash containing probability counts
+
+=head2 output:
+ 
+=head2 example:
+
+ $umls->loadStPropagationHash(\%hash);
+
+=head1 propagateStCounts
+
+=head2 description:
+
+propagates the given frequency counts of the semantic types
+
+=head2 input:   
+
+ $hash <- reference to the hash containing the frequency counts
+
+=head2 output:
+
+ $hash <- containing the propagation counts of all the semantic types
+
+=head2 example:
+
+ my $phash = $umls->propagateStCounts(\%fhash);
+
+=head1 getStIC
+
+=head2 description:
+
+returns the information content of a given semantic type
+
+=head2 input:   
+
+ $st      <- string containing a semantic type
+
+=head2 output:
+
+ $double  <- double containing its IC
+
+=head2 example:
+	 
+ my $st = "bpoc";
+ my $double = $umls->getStIC($st);
+ print "The IC of $st is $double\n";
+ 
+=head1 getStProbability
+
+=head2 description:
+
+returns the probability of a given semantic type
+
+=head2 input:   
+
+ $st      <- string containing a semantic type
+
+=head2 output:
+
+ $double  <- double containing its probabilit
+
+=head2 example:
+	 
+ my $st = "bpoc";
+ my $double = $umls->getStProbability($st);
+ print "The Probability of $st is $double\n";
+
+=head1 getStN
+
+=head2 description:
+
+returns the total number of semantic types (N)
+
+=head2 input:   
+	 
+=head2 output:
+
+ $int  <- double containing frequency
+
+=head2 example:
+
+ my $int = $umls->getStN();
+
+=head1 setStSmoothing
+
+
+=head2 description:
+
+function to set the smoothing parameter
+
+=head2 input:   
+	  
+=head2 output:
+  
+=head2 example:
+ 
+ $umls->setStSmoothing();
+
+=head1 stPathsToRoot
+
+=head2 description:
+
+This function to find all the paths from a semantic type (tui)  
+to the root node of the is-a taxonomy in the semantic network
+
+=head2 input:   
+
+ $tui     <- string containing tui
+
+=head2 output:
+
+ $array   <- array reference containing the paths
+
+=head2 example:	
+
+ my $tui   = "T023"
+ my $array = $umls->stPathsToRoot($tui);
+ print "The paths from $tui to the root are:\n";
+ foreach my $path (@{$array}) { print "  $path\n";
+
+=head1 stFindShortestPath 
+
+
+=head2 description:
+
+This function returns the shortest path between two semantic type TUIs.
+
+=head2 input: 
+
+ $st1   <- string containing the first tui
+ $st2   <- string containing the second tui
+
+=head2 output:
+
+ $array <- reference to an array containing paths
+
+=head2 example:
+
+  my $st1  = "T023";
+  my $st2  = "T029";
+  my $array     = $umls->stFindShortestPath($st1,$st2);
+  print "The shortest path(s) between $st1 than $st2 are:\n";
+  foreach my $path (@{$array}) { print "  $path\n"; }
+

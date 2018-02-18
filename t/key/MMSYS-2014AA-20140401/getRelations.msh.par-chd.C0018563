@@ -1,0 +1,25 @@
+
+CuiFinder User Options: 
+   --config option set
+
+
+UMLS-Interface Configuration Information
+  Sources (SAB):
+    MSH
+  Relations (REL):
+    CHD
+    PAR
+  Database: 
+    umls (MMSYS-2014AA-20140401)
+
+
+
+
+The relations of hands (C0018563) are: 
+ AQ
+ QB
+ RB
+ RN
+ PAR
+ SIB
+ CHD

@@ -1,0 +1,21 @@
+
+CuiFinder User Options: 
+   --config option set
+
+
+UMLS-Interface Configuration Information
+  Sources (SAB):
+    SNOMEDCT_US
+  Relations (REL):
+    CHD
+    PAR
+  Database: 
+    umls (MMSYS-2016AA-20160329)
+
+
+
+
+The parents of hand (C1281583) are: 
+  hand structure(C3714557) 
+  entire body part(C1285081) 
+The term hand (C0018563) does not have any parents

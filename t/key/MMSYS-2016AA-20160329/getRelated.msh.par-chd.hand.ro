@@ -1,0 +1,18 @@
+
+CuiFinder User Options: 
+   --config option set
+
+
+UMLS-Interface Configuration Information
+  Sources (SAB):
+    MSH
+  Relations (REL):
+    CHD
+    PAR
+  Database: 
+    umls (MMSYS-2016AA-20160329)
+
+
+
+
+No CUIs are associated with hand (C0018563) given the relation (ro).

@@ -1,0 +1,22 @@
+
+CuiFinder User Options: 
+   --config option set
+
+
+UMLS-Interface Configuration Information
+  Sources (SABDEF):
+    MSH
+  Relations (RELDEF):
+    CHD
+    PAR
+  Database: 
+    umls (MMSYS-2014AA-20140401)
+
+
+
+
+The definition(s) of hand (C0018563):
+  1. C0018563 PAR C1140618 MSH : The region of the upper limb in animals, extending from the deltoid region to the HAND, and including the ARM; AXILLA; and SHOULDER.
+  2. C0018563 CHD C0025526 MSH : The region of the HAND between the WRIST and the FINGERS.
+  3. C0018563 CHD C0025526 MSH : The five cylindrical bones of the METACARPUS, articulating with the CARPAL BONES proximally and the PHALANGES OF FINGERS distally.
+  4. C0018563 CHD C0043262 MSH : The region of the upper limb between the metacarpus and the FOREARM.

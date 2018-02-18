@@ -1,0 +1,2186 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body style="background-color: white">
+
+
+
+<ul id="index">
+  <li><a href="#NAME">NAME</a></li>
+  <li><a href="#SYNOPSIS">SYNOPSIS</a></li>
+  <li><a href="#ABSTRACT">ABSTRACT</a></li>
+  <li><a href="#INSTALL">INSTALL</a></li>
+  <li><a href="#DESCRIPTION">DESCRIPTION</a></li>
+  <li><a href="#DATABASE-SETUP">DATABASE SETUP</a></li>
+  <li><a href="#INITIALIZING-THE-MODULE">INITIALIZING THE MODULE</a></li>
+  <li><a href="#PARAMETERS">PARAMETERS</a></li>
+  <li><a href="#CONFIGURATION-FILE">CONFIGURATION FILE</a></li>
+  <li><a href="#FUNCTION-DESCRIPTIONS">FUNCTION DESCRIPTIONS</a>
+    <ul>
+      <li><a href="#Configuration-Functions">Configuration Functions</a>
+        <ul>
+          <li><a href="#returnTableNames">returnTableNames</a></li>
+          <li><a href="#dropConfigTable">dropConfigTable</a></li>
+          <li><a href="#removeConfigFiles">removeConfigFiles</a></li>
+          <li><a href="#reConfig">reConfig</a></li>
+        </ul>
+      </li>
+      <li><a href="#UMLS-Functions">UMLS Functions</a>
+        <ul>
+          <li><a href="#root">root</a></li>
+          <li><a href="#version">version</a></li>
+        </ul>
+      </li>
+      <li><a href="#Parameter-Functions">Parameter Functions</a>
+        <ul>
+          <li><a href="#getConfigParameters">getConfigParameters</a></li>
+          <li><a href="#getSabString">getSabString</a></li>
+          <li><a href="#getRelString">getRelString</a></li>
+          <li><a href="#getRelaString">getRelaString</a></li>
+        </ul>
+      </li>
+      <li><a href="#Metathesaurus-Concept-Functions">Metathesaurus Concept Functions</a>
+        <ul>
+          <li><a href="#exists">exists</a></li>
+          <li><a href="#getRelated">getRelated</a></li>
+          <li><a href="#getPreferredTerm">getPreferredTerm</a></li>
+          <li><a href="#getAllPreferredTerm">getAllPreferredTerm</a></li>
+          <li><a href="#getTermList">getTermList</a></li>
+          <li><a href="#getDefTermList">getDefTermList</a></li>
+          <li><a href="#getAllTerms">getAllTerms</a></li>
+          <li><a href="#getConceptList">getConceptList</a></li>
+          <li><a href="#getDefConceptList">getDefConceptList</a></li>
+          <li><a href="#getAllConcepts">getAllConcepts</a></li>
+          <li><a href="#getCompounds">getCompounds</a></li>
+          <li><a href="#getCuiList">getCuiList</a></li>
+          <li><a href="#getCuisFromSource">getCuisFromSource</a></li>
+          <li><a href="#getSab">getSab</a></li>
+          <li><a href="#getChildren">getChildren</a></li>
+          <li><a href="#getParents">getParents</a></li>
+          <li><a href="#getRelations">getRelations</a></li>
+          <li><a href="#getRelationsBetweenCuis">getRelationsBetweenCuis</a></li>
+        </ul>
+      </li>
+      <li><a href="#Metathesaurus-Concept-Definition-Fuctions">Metathesaurus Concept Definition Fuctions</a>
+        <ul>
+          <li><a href="#getExtendedDefinition">getExtendedDefinition</a></li>
+          <li><a href="#getCuiDef">getCuiDef</a></li>
+        </ul>
+      </li>
+      <li><a href="#Metathesaurus-Concept-Path-Functions">Metathesaurus Concept Path Functions</a>
+        <ul>
+          <li><a href="#depth">depth</a></li>
+          <li><a href="#pathsToRoot">pathsToRoot</a></li>
+          <li><a href="#findMinimumDepth">findMinimumDepth</a></li>
+          <li><a href="#findMaximumDepth">findMaximumDepth</a></li>
+          <li><a href="#findNumberOfCloserConcepts">findNumberOfCloserConcepts</a></li>
+          <li><a href="#findNumberOfCloserConcepts1">findNumberOfCloserConcepts</a></li>
+          <li><a href="#findClosenessCentrality">findClosenessCentrality</a></li>
+          <li><a href="#findAncestors">findAncestors</a></li>
+          <li><a href="#findDescendents">findDescendents</a></li>
+          <li><a href="#findShortestPathLength">findShortestPathLength</a></li>
+          <li><a href="#findShortestPath">findShortestPath</a></li>
+          <li><a href="#findLeastCommonSubsumer">findLeastCommonSubsumer</a></li>
+          <li><a href="#setUndirectedPath">setUndirectedPath</a></li>
+          <li><a href="#setRealtimePath">setRealtimePath</a></li>
+        </ul>
+      </li>
+      <li><a href="#Metathesaurus-Concept-Propagation-Functions">Metathesaurus Concept Propagation Functions</a>
+        <ul>
+          <li><a href="#setPropagationParameters">setPropagationParameters</a></li>
+          <li><a href="#getIC">getIC</a></li>
+          <li><a href="#getSecoIntrinsicIC">getSecoIntrinsicIC</a></li>
+          <li><a href="#getSanchezIntrinsicIC">getSanchezIntrinsicIC</a></li>
+          <li><a href="#getProbability">getProbability</a></li>
+          <li><a href="#getN">getN</a></li>
+          <li><a href="#getFrequency">getFrequency</a></li>
+          <li><a href="#getPropagationCuis">getPropagationCuis</a></li>
+          <li><a href="#propagateCounts">propagateCounts</a></li>
+        </ul>
+      </li>
+      <li><a href="#Semantic-Network-Functions">Semantic Network Functions</a>
+        <ul>
+          <li><a href="#getSemanticRelation">getSemanticRelation</a></li>
+          <li><a href="#getSt">getSt</a></li>
+          <li><a href="#getSt1">getSt</a></li>
+          <li><a href="#getSemanticGroup">getSemanticGroup</a></li>
+          <li><a href="#getAllSemanticGroups">getAllSemanticGroups</a></li>
+          <li><a href="#getStsFromSg">getStsFromSg</a></li>
+          <li><a href="#stGetSemanticGroup">stGetSemanticGroup</a></li>
+          <li><a href="#getStString">getStString</a></li>
+          <li><a href="#getStAbr">getStAbr</a></li>
+          <li><a href="#getStTui">getStTui</a></li>
+          <li><a href="#getStDef">getStDef</a></li>
+        </ul>
+      </li>
+      <li><a href="#Semantic-Network-Path-Functions">Semantic Network Path Functions</a>
+        <ul>
+          <li><a href="#stPathsToRoot">stPathsToRoot</a></li>
+          <li><a href="#stFindShortestPath">stFindShortestPath</a></li>
+        </ul>
+      </li>
+      <li><a href="#Semantic-Network-Propagation-Functions">Semantic Network Propagation Functions</a>
+        <ul>
+          <li><a href="#loadStPropagationHash">loadStPropagationHash</a></li>
+          <li><a href="#propagateStCounts">propagateStCounts</a></li>
+          <li><a href="#getStIC">getStIC</a></li>
+          <li><a href="#getStProbability">getStProbability</a></li>
+          <li><a href="#getStN">getStN</a></li>
+          <li><a href="#setStSmoothing">setStSmoothing</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#REFERENCING">REFERENCING</a></li>
+  <li><a href="#SEE-ALSO">SEE ALSO</a></li>
+  <li><a href="#AUTHOR">AUTHOR</a></li>
+  <li><a href="#COPYRIGHT">COPYRIGHT</a></li>
+</ul>
+
+<h1 id="NAME">NAME</h1>
+
+<p>UMLS::Interface - Perl interface to the Unified Medical Language System (UMLS)</p>
+
+<h1 id="SYNOPSIS">SYNOPSIS</h1>
+
+<pre><code> use UMLS::Interface;
+
+ $umls = UMLS::Interface-&gt;new(); 
+
+ die &quot;Unable to create UMLS::Interface object.\n&quot; if(!$umls); 
+
+ my $root = $umls-&gt;root();
+
+ my $term1    = &quot;skull&quot;;
+
+ my $tList1   = $umls-&gt;getConceptList($term1);
+ my $cui1     = pop @{$tList1};
+
+ my $term2    = &quot;hand&quot;;
+ my $tList2   = $umls-&gt;getDefConceptList($term2);
+
+ my $cui2     = shift @{$tList2};
+ my $exists1  = $umls-&gt;exists($cui1);
+ my $exists2  = $umls-&gt;exists($cui2);
+
+ if($exists1) { print &quot;The concept $term1 ($cui1) exists in your UMLS view.\n&quot;; }
+ else         { print &quot;The concept $term1 ($cui1) does not exist in your UMLS view.\n&quot;; }
+
+ if($exists2) { print &quot;The concept $term2 ($cui2) exists in your UMLS view.\n&quot;; }
+ else         { print &quot;The concept $term2 ($cui2) does not exist in your UMLS view.\n&quot;; }
+ print &quot;\n&quot;;
+
+ my $cList1   = $umls-&gt;getTermList($cui1);
+ my $cList2   = $umls-&gt;getDefTermList($cui2);
+
+ print &quot;The terms associated with $term1 ($cui1) using the SAB parameter:\n&quot;;
+ foreach my $c1 (@{$cList1}) {
+    print &quot; =&gt; $c1\n&quot;;
+ } print &quot;\n&quot;;
+
+ print &quot;The terms associated with $term2 ($cui2) using the SABDEF parameter:\n&quot;;
+ foreach my $c2 (@{$cList2}) {
+    print &quot; =&gt; $c2\n&quot;;
+ } print &quot;\n&quot;;
+
+ my $lcs = $umls-&gt;findLeastCommonSubsumer($cui1, $cui2);
+ print &quot;The least common subsumer between $term1 ($cui1) and &quot;;
+ print &quot;$term2 ($cui2) is @{$lcs}\n\n&quot;;
+
+ my $shortestpath = $umls-&gt;findShortestPath($cui1, $cui2);
+ print &quot;The shortest path between $term1 ($cui1) and $term2 ($cui2):\n&quot;;
+ print &quot;  =&gt; @{$shortestpath}\n\n&quot;;
+
+ my $pathstoroot   = $umls-&gt;pathsToRoot($cui1);
+ print &quot;The paths from $term1 ($cui1) and the root:\n&quot;;
+ foreach  $path (@{$pathstoroot}) {
+    print &quot;  =&gt; $path\n&quot;;
+ } print &quot;\n&quot;;
+
+ my $mindepth = $umls-&gt;findMinimumDepth($cui1);
+ my $maxdepth = $umls-&gt;findMaximumDepth($cui1);
+ print &quot;The minimum depth of $term1 ($cui1) is $mindepth\n&quot;;
+ print &quot;The maximum depth of $term1 ($cui1) is $maxdepth\n\n&quot;;
+
+ my $children = $umls-&gt;getChildren($cui2); 
+ print &quot;The child(ren) of $term2 ($cui2) are: @{$children}\n\n&quot;;
+
+ my $parents = $umls-&gt;getParents($cui2);
+ print &quot;The parent(s) of $term2 ($cui2) are: @{$parents}\n\n&quot;;
+
+ my $relations = $umls-&gt;getRelations($cui2);
+ print &quot;The relation(s) of $term2 ($cui2) are: @{$relations}\n\n&quot;;
+
+ my $rels = $umls-&gt;getRelated($cui2, &quot;PAR&quot;);
+ print &quot;The parents(s) of $term2 ($cui2) are: @{$rels}\n\n&quot;;
+
+ my $definitions = $umls-&gt;getCuiDef($cui1);
+ print &quot;The definition(s) of $term1 ($cui1) are:\n&quot;;
+ foreach $def (@{$definitions}) {
+    print &quot;  =&gt; $def\n&quot;; $i++;
+ } print &quot;\n&quot;;
+
+ my $sabs = $umls-&gt;getSab($cui1);
+
+ print &quot;The sources containing $term1 ($cui1) are: @{$sabs}\n\n&quot;;
+
+ print &quot;The semantic type(s) of $term1 ($cui1) and the semantic\n&quot;;
+
+ print &quot;definition are:\n&quot;;
+ my $sts = $umls-&gt;getSt($cui1);
+ foreach my $st (@{$sts}) {
+
+    my $abr = $umls-&gt;getStAbr($st);
+    my $string = $umls-&gt;getStString($abr);
+    my $def    = $umls-&gt;getStDef($abr);
+    print &quot;  =&gt; $string ($abr) : @{$def}\n&quot;;
+
+ } print &quot;\n&quot;;
+
+ $umls-&gt;removeConfigFiles();
+
+ $umls-&gt;dropConfigTable();</code></pre>
+
+<h1 id="ABSTRACT">ABSTRACT</h1>
+
+<p>This package provides a Perl interface to the Unified Medical Language System. The package is set up to access pre-specified sources of the UMLS present in a mysql database. The package was essentially created for use with the UMLS::Similarity package for measuring the semantic relatedness of concepts.</p>
+
+<h1 id="INSTALL">INSTALL</h1>
+
+<p>To install the module, run the following magic commands:</p>
+
+<pre><code>  perl Makefile.PL
+  make
+  make test
+  make install</code></pre>
+
+<p>This will install the module in the standard location. You will, most probably, require root privileges to install in standard system directories. To install in a non-standard directory, specify a prefix during the &#39;perl Makefile.PL&#39; stage as:</p>
+
+<pre><code>  perl Makefile.PL PREFIX=/home/sid</code></pre>
+
+<p>It is possible to modify other parameters during installation. The details of these can be found in the ExtUtils::MakeMaker documentation. However, it is highly recommended not messing around with other parameters, unless you know what you&#39;re doing.</p>
+
+<h1 id="DESCRIPTION">DESCRIPTION</h1>
+
+<p>This package provides a Perl interface to the Unified Medical Language System (UMLS). The UMLS is a knowledge representation framework encoded designed to support broad scope biomedical research queries. There exists three major sources in the UMLS. The Metathesaurus which is a taxonomy of medical concepts, the Semantic Network which categorizes concepts in the Metathesaurus, and the SPECIALIST Lexicon which contains a list of biomedical and general English terms used in the biomedical domain. The UMLS-Interface package is set up to access the Metathesaurus and the Semantic Network present in a mysql database.</p>
+
+<h1 id="DATABASE-SETUP">DATABASE SETUP</h1>
+
+<p>The interface assumes that the UMLS is present as a mysql database. The name of the database can be passed as configuration options at initialization. However, if the names of the databases are not provided at initialization, then default value is used -- the database for the UMLS is called &#39;umls&#39;.</p>
+
+<p>The UMLS database must contain six tables: 1. MRREL 2. MRCONSO 3. MRSAB 4. MRDOC 5. MRDEF 6. MRSTY 7. SRDEF</p>
+
+<p>All other tables in the databases will be ignored, and any of these tables missing would raise an error.</p>
+
+<p>A script explaining how to install the UMLS and the mysql database are in the INSTALL file.</p>
+
+<h1 id="INITIALIZING-THE-MODULE">INITIALIZING THE MODULE</h1>
+
+<p>To create an instance of the interface object, using default values for all configuration options:</p>
+
+<pre><code>  use UMLS::Interface;
+  my $interface = UMLS::Interface-&gt;new();</code></pre>
+
+<p>Database connection options can be passed through the my.cnf file. For example: [client] user = &lt;username&gt; password = &lt;password&gt; port = 3306 socket = /tmp/mysql.sock database = umls</p>
+
+<p>Or through the by passing the connection information when first instantiating an instance. For example:</p>
+
+<pre><code>    $umls = UMLS::Interface-&gt;new({&quot;driver&quot; =&gt; &quot;mysql&quot;, 
+                                  &quot;database&quot; =&gt; &quot;$database&quot;, 
+                                  &quot;username&quot; =&gt; &quot;$opt_username&quot;,  
+                                  &quot;password&quot; =&gt; &quot;$opt_password&quot;, 
+                                  &quot;hostname&quot; =&gt; &quot;$hostname&quot;, 
+                                  &quot;socket&quot;   =&gt; &quot;$socket&quot;}); 
+
+  &#39;driver&#39;       -&gt; Default value &#39;mysql&#39;. This option specifies the Perl 
+                    DBD driver that should be used to access the
+                    database. This implies that the some other DBMS
+                    system (such as PostgresSQL) could also be used,
+                    as long as there exist Perl DBD drivers to
+                    access the database.
+  &#39;umls&#39;         -&gt; Default value &#39;umls&#39;. This option specifies the name
+                    of the UMLS database.
+  &#39;hostname&#39;     -&gt; Default value &#39;localhost&#39;. The name or the IP address
+                    of the machine on which the database server is
+                    running.
+  &#39;socket&#39;       -&gt; Default value &#39;/tmp/mysql.sock&#39;. The socket on which 
+                    the database server is using.
+  &#39;port&#39;         -&gt; The port number on which the database server accepts
+                    connections.
+  &#39;username&#39;     -&gt; Username to use to connect to the database server. If
+                    not provided, the module attempts to connect as an
+                    anonymous user.
+  &#39;password&#39;     -&gt; Password for access to the database server. If not
+                    provided, the module attempts to access the server
+                    without a password.</code></pre>
+
+<p>More information is provided in the INSTALL file Stage 5 Step D (search for &#39;Step D&#39; and you will find it).</p>
+
+<h1 id="PARAMETERS">PARAMETERS</h1>
+
+<p>You can also pass other parameters which controls the functionality of the Interface.pm module.</p>
+
+<pre><code>    $umls = UMLS::Interface-&gt;new({&quot;forcerun&quot;      =&gt; &quot;1&quot;,
+                                  &quot;realtime&quot;      =&gt; &quot;1&quot;,
+                                  &quot;cuilist&quot;       =&gt; &quot;file&quot;,  
+                                  &quot;verbose&quot;       =&gt; &quot;1&quot;, 
+                                  &quot;debugpath&quot;     =&gt; &quot;file&quot;});
+
+  &#39;forcerun&#39;     -&gt; This parameter will bypass any command prompts such 
+                    as asking if you would like to continue with the index 
+                    creation. 
+
+  &#39;realtime&#39;     -&gt; This parameter will not create a database of path 
+                    information (what we refer to as the index) but obtain
+                    the path information about a concept on the fly
+
+  &#39;cuilist&#39;      -&gt; This parameter contains a file containing a list 
+                    of CUIs in which the path information should be 
+                    store for - if the CUI isn&#39;t on the list the path 
+                    information for that CUI will not be stored
+
+  &#39;verbose&#39;      -&gt; This parameter will print out the table information 
+                    to a config file in the UMLSINTERFACECONFIG directory
+
+  &#39;debugpath&#39;    -&gt; This prints out the path information to a file during
+                    any of the realtime runs</code></pre>
+
+<p>You can also reconfigure these options by calling the reConfig method.</p>
+
+<pre><code>    $umls-&gt;reConfig({&quot;forcerun&quot;      =&gt; &quot;1&quot;,
+                     &quot;realtime&quot;      =&gt; &quot;1&quot;,
+                     &quot;verbose&quot;       =&gt; &quot;1&quot;, 
+                     &quot;debugpath&quot;     =&gt; &quot;file&quot;});</code></pre>
+
+<h1 id="CONFIGURATION-FILE">CONFIGURATION FILE</h1>
+
+<p>There exist a configuration files to specify which source and what relations are to be used. The default source is the Medical Subject Heading (MSH) vocabulary and the default relations are the PAR/CHD relation.</p>
+
+<pre><code>  &#39;config&#39; -&gt; File containing the source and relation parameters</code></pre>
+
+<p>The configuration file can be passed through the instantiation of the UMLS-Interface. Similar to passing the connection options. For example:</p>
+
+<pre><code>    $umls = UMLS::Interface-&gt;new({&quot;driver&quot;      =&gt; &quot;mysql&quot;, 
+                                  &quot;database&quot;    =&gt; $database, 
+                                  &quot;username&quot;    =&gt; $opt_username,  
+                                  &quot;password&quot;    =&gt; $opt_password, 
+                                  &quot;hostname&quot;    =&gt; $hostname, 
+                                  &quot;socket&quot;      =&gt; $socket,
+                                  &quot;config&quot;      =&gt; $configfile});
+
+    or
+
+    $umls = UMLS::Interface-&gt;new({&quot;config&quot; =&gt; $configfile});</code></pre>
+
+<p>The format of the configuration file is as follows:</p>
+
+<pre><code>  SAB :: &lt;include|exclude&gt; &lt;source1, source2, ... sourceN&gt;
+  REL :: &lt;include|exclude&gt; &lt;relation1, relation2, ... relationN&gt;
+  RELA :: &lt;include|exclude&gt; &lt;rela1, rela2, ... relaN&gt; 
+  
+  SABDEF :: &lt;include|exclude&gt; &lt;source1, source2, ... sourceN&gt;
+  RELDEF :: &lt;include|exclude&gt; &lt;relation1, relation2, ... relationN&gt;</code></pre>
+
+<p>The SAB, REL and RELA are for specifing what sources and relations should be used when traversing the UMLS. For example, if we wanted to use the MSH vocabulary with only the RB/RN relations that have been identified as &#39;isa&#39; RELAs, then the configuration file would be:</p>
+
+<pre><code>  SAB :: include MSH
+  REL :: include RB, RN
+  RELA :: include inverse_isa, isa</code></pre>
+
+<p>if we did not care what type of RELA the RB/RN relations were the configuration would be:</p>
+
+<pre><code>  SAB :: include MSH
+  REL :: include RB, RN</code></pre>
+
+<p>if we wanted to use MSH and use any relation except for PAR/CHD, the configuration would be:</p>
+
+<pre><code>  SAB :: include MSH
+  REL :: exclude PAR, CHD</code></pre>
+
+<p>The SABDEF and RELDEF are for obtaining a definition or extended definition of the CUI. SABDEF signifies which sources to extract the definition from. For example,</p>
+
+<pre><code>  SABDEF :: include SNOMEDCT</code></pre>
+
+<p>would only return definitions that exist in the SNOMEDCT source. where as:</p>
+
+<pre><code>  SABDEF :: exclude SNOMEDCT</code></pre>
+
+<p>would use the definitions from the entire UMLS except for SNOMEDCT. The default, if you didn&#39;t specify SABDEF at all in the configuration file, would use the entire UMLS.</p>
+
+<p>The RELDEF is from the extended definition. It signifies which relations should be included when creating the extended definition of a given CUI. For example,</p>
+
+<pre><code>  RELDEF :: include TERM, CUI, PAR, CHD, RB, RN</code></pre>
+
+<p>This would include in the definition the terms associated with the CUI, the CUI&#39;s definition and the definitions of the concepts related to the CUI through either a PAR, CHD, RB or RN relation. Similarly, using the exclude as in:</p>
+
+<pre><code>  RELDEF :: exclude TERM, CUI, PAR, CHD, RB, RN</code></pre>
+
+<p>would use all of the relations except for the one&#39;s specified. If RELDEF is not specified the default uses all of the relations which consist of: TERM, CUI, PAR, CHD, RB, RN, RO, SYN, and SIB.</p>
+
+<p>I know that TERM and CUI are not &#39;relations&#39; but we needed a way to specify them and this seem to make the most sense at the time.</p>
+
+<p>An example of the configuration file can be seen in the samples/ directory.</p>
+
+<h1 id="FUNCTION-DESCRIPTIONS">FUNCTION DESCRIPTIONS</h1>
+
+<h2 id="Configuration-Functions">Configuration Functions</h2>
+
+<h3 id="returnTableNames">returnTableNames</h3>
+
+<p>description:</p>
+
+<pre><code> returns the table names in both human readable and hex form</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+         </code></pre>
+
+<p>output:</p>
+
+<pre><code> $hash &lt;- reference to a hash containin the table names 
+          in human readable and hex form</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $hash = $umls-&gt;returnTableNames();
+ foreach my $table (sort keys %{$hash}) { print &quot;$table\n&quot;; }</code></pre>
+
+<h3 id="dropConfigTable">dropConfigTable</h3>
+
+<p>description:</p>
+
+<pre><code> removes the configuration tables</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+         </code></pre>
+
+<p>output:</p>
+
+<pre><code> None</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ $umls-&gt;dropConfigTable();</code></pre>
+
+<h3 id="removeConfigFiles">removeConfigFiles</h3>
+
+<p>description:</p>
+
+<pre><code>  removes the configuration files</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+        </code></pre>
+
+<p>output:</p>
+
+<pre><code> None
+ </code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ $umls-&gt;removeConfigFiles();</code></pre>
+
+<h3 id="reConfig">reConfig</h3>
+
+<p>description:</p>
+
+<pre><code>  function to re-initialize the interface configuration parameters</code></pre>
+
+<p>input:</p>
+
+<pre><code> $hash -&gt; reference to hash containing parameters </code></pre>
+
+<p>output:</p>
+
+<pre><code> None</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my %parameters = ();
+ $parameters{&quot;verbose&quot;} = 1;
+ $umls-&gt;reConfig(\%parameters);</code></pre>
+
+<h2 id="UMLS-Functions">UMLS Functions</h2>
+
+<h3 id="root">root</h3>
+
+<p>description:</p>
+
+<pre><code>  returns the root</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+        </code></pre>
+
+<p>output:</p>
+
+<pre><code> $string -&gt; string containing the root</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $root = $umls-&gt;root();
+ print &quot;The root is: $root\n&quot;;
+ </code></pre>
+
+<h3 id="version">version</h3>
+
+<p>description:</p>
+
+<pre><code> returns the version of the UMLS currently being used</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+         </code></pre>
+
+<p>output:</p>
+
+<pre><code> $version -&gt; string containing the version</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $version = $umls-&gt;version();
+ print &quot;The version of the UMLS is: $version\n&quot;;
+      </code></pre>
+
+<h2 id="Parameter-Functions">Parameter Functions</h2>
+
+<h3 id="getConfigParameters">getConfigParameters</h3>
+
+<p>description:</p>
+
+<pre><code> returns the SAB/REL or SABDEF/RELDEF parameters set in the configuration file</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+         </code></pre>
+
+<p>output:</p>
+
+<pre><code> $hash &lt;- reference to hash containing parameters in the 
+          configuration file - if there was not config
+          file the hash is empty and defaults are being
+          use</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $hash = $umls-&gt;getConfigParameters;
+ print &quot;The configuration parameters are: \n&quot;;
+ foreach my $param (sort keys %{$hash}) { 
+    print &quot;  $param\n&quot;;
+ }</code></pre>
+
+<h3 id="getSabString">getSabString</h3>
+
+<p>description:</p>
+
+<pre><code> returns the sab (SAB) information from the configuration file</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+         </code></pre>
+
+<p>output:</p>
+
+<pre><code> $string &lt;- containing the SAB line from the config file</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $string = $umls-&gt;getSabString();
+ print &quot;The SAB parameter is: $string\n&quot;;</code></pre>
+
+<h3 id="getRelString">getRelString</h3>
+
+<p>description:</p>
+
+<pre><code> returns the relation (REL) information from the configuration file</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+         </code></pre>
+
+<p>output:</p>
+
+<pre><code> $string &lt;- containing the REL line from the config file</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $string = $umls-&gt;getRelString();
+ print &quot;The REL parameter is: $string\n&quot;;</code></pre>
+
+<h3 id="getRelaString">getRelaString</h3>
+
+<p>description:</p>
+
+<pre><code> returns the rela (RELA) information from the configuration file</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+         </code></pre>
+
+<p>output:</p>
+
+<pre><code> $string &lt;- containing the RELA line from the config fil</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $string = $umls-&gt;getRelaString();
+ print &quot;The RELA parameter is: $string\n&quot;;</code></pre>
+
+<h2 id="Metathesaurus-Concept-Functions">Metathesaurus Concept Functions</h2>
+
+<h3 id="exists">exists</h3>
+
+<p>description:</p>
+
+<pre><code> function to check if a concept ID exists in the database.</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing a cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> 1 | 0    &lt;- integers indicating if the cui exists</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+         
+ my $concept = &quot;C0018563&quot;;      
+ if($umls-&gt;exists($concept)) { 
+    print &quot;$concept exists\n&quot;;
+ }</code></pre>
+
+<h3 id="getRelated">getRelated</h3>
+
+<p>description:</p>
+
+<pre><code> function that returns a list of concepts (@concepts) related 
+ to a concept $concept through a relation $rel</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing cui
+ $rel     &lt;- string containing a relation</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- reference to an array of cuis</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new();      
+ my $concept = &quot;C0018563&quot;;
+ my $rel     = &quot;SIB&quot;;
+ my $array   = $umls-&gt;getRelated($concept, $rel);
+ print &quot;The concepts related to $concept using the $rel relation are: \n&quot;;
+ foreach my $related_concept (@{$array}) { 
+          print &quot;$related_concept\n&quot;;
+ }</code></pre>
+
+<h3 id="getPreferredTerm">getPreferredTerm</h3>
+
+<p>description:</p>
+
+<pre><code> function that returns the preferred term of a cui from the sources 
+ specified in the configuration file</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $string  &lt;- string containing the preferred term</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new();      
+ my $concept = &quot;C0018563&quot;;
+ my $string  = $umls-&gt;getPreferredTerm($concept);
+ print &quot;The preferred term of $concept is $string\n&quot;;</code></pre>
+
+<h3 id="getAllPreferredTerm">getAllPreferredTerm</h3>
+
+<p>description:</p>
+
+<pre><code> function that returns the preferred term of a cui from entire umls</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $string  &lt;- string containing the preferred term</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept = &quot;C0018563&quot;;
+ my $string  = $umls-&gt;getAllPreferredTerm($concept);
+ print &quot;The preferred term of $concept is $string\n&quot;;
+ </code></pre>
+
+<h3 id="getTermList">getTermList</h3>
+
+<p>description:</p>
+
+<pre><code> function to map terms to a given cui from the sources 
+ specified in the configuration file using SAB</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- reference to an array of terms (strings)</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new();     
+ my $concept = &quot;C0018563&quot;;
+ my $array   = $umls-&gt;getTermList($concept);
+ print &quot;The terms associated with $concept are:\n&quot;;
+ foreach my $term (@{$array}) { print &quot;  $term\n&quot;; }</code></pre>
+
+<h3 id="getDefTermList">getDefTermList</h3>
+
+<p>description:</p>
+
+<pre><code> function to map terms to a given cui from the sources 
+ specified in the configuration file using SABDEF</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- reference to an array of terms (strings)</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new();     
+ my $concept = &quot;C0018563&quot;;
+ my $array   = $umls-&gt;getDefTermList($concept);
+ print &quot;The terms associated with $concept are:\n&quot;;
+ foreach my $term (@{$array}) { print &quot;  $term\n&quot;; }</code></pre>
+
+<h3 id="getAllTerms">getAllTerms</h3>
+
+<p>description:</p>
+
+<pre><code> function to map terms from the entire UMLS to a given cui</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- reference to an array containing terms (strings)</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new();     
+ my $concept = &quot;C0018563&quot;;
+ my $array   = $umls-&gt;getAllTerms($concept);
+ print &quot;The terms associated with $concept are:\n&quot;;
+ foreach my $term (@{$array}) { print &quot;  $term\n&quot;; }</code></pre>
+
+<h3 id="getConceptList">getConceptList</h3>
+
+<p>description:</p>
+
+<pre><code> function to maps a given term to a set cuis in the sources
+ specified in the configuration file by SAB</code></pre>
+
+<p>input:</p>
+
+<pre><code> $term  &lt;- string containing a term</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array &lt;- reference to an array containing cuis</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+        
+ my $term   = &quot;hand&quot;;
+ my $array  = $umls-&gt;getConceptList($term);
+ print &quot;The concept associated with $term are:\n&quot;;
+ foreach my $concept (@{$array}) { print &quot;  $concept\n&quot;; }</code></pre>
+
+<h3 id="getDefConceptList">getDefConceptList</h3>
+
+<p>description:</p>
+
+<pre><code> function to maps a given term to a set cuis in the sources
+ specified in the configuration file by SABDEF</code></pre>
+
+<p>input:</p>
+
+<pre><code> $term  &lt;- string containing a term</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array &lt;- reference to an array containing cuis</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $term   = &quot;hand&quot;;
+ my $array  = $umls-&gt;getDefConceptList($term);
+ print &quot;The concept associated with $term are:\n&quot;;
+ foreach my $concept (@{$array}) { print &quot;  $concept\n&quot;; }</code></pre>
+
+<h3 id="getAllConcepts">getAllConcepts</h3>
+
+<p>description:</p>
+
+<pre><code> function to maps a given term to a set cuis all the sources</code></pre>
+
+<p>input:</p>
+
+<pre><code> $term  &lt;- string containing a term</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array &lt;- reference to an array containing cuis</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $term   = &quot;hand&quot;;
+ my $array  = $umls-&gt;getAllConcepts($term);
+ print &quot;The concept associated with $term are:\n&quot;;
+ foreach my $concept (@{$array}) { print &quot;  $concept\n&quot;; }</code></pre>
+
+<h3 id="getCompounds">getCompounds</h3>
+
+<p>description:</p>
+
+<pre><code> function returns all the compounds in the sources 
+ specified in the configuration file</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+        </code></pre>
+
+<p>output:</p>
+
+<pre><code> $hash &lt;- reference to a hash containing cuis</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $hash = $umls-&gt;getCompounds();
+ foreach my $term (sort keys %{$hash}) {
+   print &quot;$term\n&quot;;
+ }</code></pre>
+
+<h3 id="getCuiList">getCuiList</h3>
+
+<p>description:</p>
+
+<pre><code> returns all of the cuis in the sources specified in the configuration file</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+         </code></pre>
+
+<p>output:</p>
+
+<pre><code> $hash &lt;- reference to a hash containing cuis</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $hash = $umls-&gt;getCuiList();
+ foreach my $concept (sort keys %{$hash}) { 
+    print &quot;$concept\n&quot;;
+ }</code></pre>
+
+<h3 id="getCuisFromSource">getCuisFromSource</h3>
+
+<p>description:</p>
+
+<pre><code> returns the cuis from a specified source </code></pre>
+
+<p>input:</p>
+
+<pre><code> $sab   &lt;- string contain the sources abbreviation</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array &lt;- reference to an array containing cuis</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new();      
+ my $sab   = &quot;MSH&quot;;
+ my $array = $umls-&gt;getCuisFromSource($sab);
+ foreach my $concept (@{$array}) { 
+   print &quot;$concept\n&quot;;
+ }</code></pre>
+
+<h3 id="getSab">getSab</h3>
+
+<p>description:</p>
+
+<pre><code> takes as input a cui and returns all of the sources in which it originated 
+ from </code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing the cui </code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- reference to an array contain the sources (abbreviations)</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new();      
+ my $concept = &quot;C0018563&quot;;      
+ my $array   = $umls-&gt;getSab($concept);
+ print &quot;The concept ($concept) exists in sources:\n&quot;;
+ foreach my $sab (@{$array}) { print &quot;  $sab\n&quot;; }</code></pre>
+
+<h3 id="getChildren">getChildren</h3>
+
+<p>description:</p>
+
+<pre><code> returns the children of a concept - the relations that are considered children 
+ are predefined by the user in the configuration file. The default is the CHD 
+ relation.</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- reference to an array containing a list of cuis</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept  = &quot;C0018563&quot;;     
+ my $children = $umls-&gt;getChildren($concept);
+ print &quot;The children of $concept are:\n&quot;;
+ foreach my $child (@{$children}) { print &quot;  $child\n&quot;; }</code></pre>
+
+<h3 id="getParents">getParents</h3>
+
+<p>description:</p>
+
+<pre><code> returns the parents of a concept - the relations that are considered parents 
+ are predefined by the user in the configuration file.The default is the PAR 
+ relation.</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- reference to an array containing a list of cuis</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept  = &quot;C0018563&quot;;     
+ my $parents  = $umls-&gt;getParents($concept);
+ print &quot;The parents of $concept are:\n&quot;;
+ foreach my $parent (@{$parents}) { print &quot;  $parent\n&quot;; }</code></pre>
+
+<h3 id="getRelations">getRelations</h3>
+
+<p>description:</p>
+
+<pre><code> returns the relations of a concept in the source specified by the user in the 
+ configuration file</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing a cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- reference to an array containing strings of relations</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+        
+ my $concept  = &quot;C0018563&quot;;     
+ my $array    = $umls-&gt;getRelations($concept);
+ print &quot;The relations associated with $concept are:\n&quot;;
+ foreach my $relation (@{$array}) { print &quot;  $relation\n&quot;; }</code></pre>
+
+<h3 id="getRelationsBetweenCuis">getRelationsBetweenCuis</h3>
+
+<p>description:</p>
+
+<pre><code> returns the relations and its source between two concepts</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept1 &lt;- string containing a cui
+ $concept2 &lt;- string containing a cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array    &lt;- reference to an array containing the relations</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept1  = &quot;C0018563&quot;;
+ my $concept2  = &quot;C0016129&quot;;
+ my $array     = $umls-&gt;getRelationsBetweenCuis($concept1,$concept2);
+ print &quot;The relations between $concept1 and $concept2 are:\n&quot;;
+ foreach my $relation (@{$array}) { print &quot;  $relation\n&quot;; }</code></pre>
+
+<h2 id="Metathesaurus-Concept-Definition-Fuctions">Metathesaurus Concept Definition Fuctions</h2>
+
+<h3 id="getExtendedDefinition">getExtendedDefinition</h3>
+
+<p>description:</p>
+
+<pre><code> returns the extended definition of a cui given the relation and source 
+ information in the configuration file </code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing a cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- reference to an array containing the definitions</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept = &quot;C0018563&quot;;      
+ my $array   = $umls-&gt;getExtendedDefinition($concept);
+ print &quot;The extended definition of $concept is:\n&quot;;
+ foreach my $def (@{$array}) { print &quot;  $def\n&quot;; }</code></pre>
+
+<h3 id="getCuiDef">getCuiDef</h3>
+
+<p>description:</p>
+
+<pre><code> returns the definition of the cui </code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing a cui
+ $sabflag &lt;- 0 | 1 whether to include the source in with the definition </code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- reference to an array of definitions (strings)</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept = &quot;C0018563&quot;;      
+ my $array   = $umls-&gt;getCuiDef($concept);
+ print &quot;The definition of $concept is:\n&quot;;
+ foreach my $def (@{$array}) { print &quot;  $def\n&quot;; }</code></pre>
+
+<h2 id="Metathesaurus-Concept-Path-Functions">Metathesaurus Concept Path Functions</h2>
+
+<h3 id="depth">depth</h3>
+
+<p>description:</p>
+
+<pre><code> function to return the maximum depth of a taxonomy.</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+         </code></pre>
+
+<p>output:</p>
+
+<pre><code> $string &lt;- string containing the depth</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $string = $umls-&gt;depth();
+           </code></pre>
+
+<h3 id="pathsToRoot">pathsToRoot</h3>
+
+<p>description:</p>
+
+<pre><code> function to find all the paths from a concept to the root node of the is-a taxonomy.</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- array reference containing the paths</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept = &quot;C0018563&quot;;      
+ my $array   = $umls-&gt;pathsToRoot($concept);
+ print &quot;The paths to the root for $concept are:\n&quot;;
+ foreach my $path (@{$array}) { print &quot;  $path\n&quot;; }</code></pre>
+
+<h3 id="findMinimumDepth">findMinimumDepth</h3>
+
+<p>description:</p>
+
+<pre><code> function returns the minimum depth of a concept given the
+ sources and relations specified in the configuration file</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing the cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $int     &lt;- string containing the depth of the cui</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept = &quot;C0018563&quot;;      
+ my $int     = $umls-&gt;findMinimumDepth($concept);
+ print &quot;The minimum depth of $concept is $int\n&quot;;</code></pre>
+
+<h3 id="findMaximumDepth">findMaximumDepth</h3>
+
+<p>description:</p>
+
+<pre><code> returns the maximum depth of a concept given the sources and relations 
+ specified in the configuration file</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing the cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $int     &lt;- string containing the depth of the cui</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept = &quot;C0018563&quot;;      
+ my $int     = $umls-&gt;findMaximumDepth($concept);
+ print &quot;The maximum depth of $concept is $int\n&quot;;</code></pre>
+
+<h3 id="findNumberOfCloserConcepts">findNumberOfCloserConcepts</h3>
+
+<p>description:</p>
+
+<pre><code> function that finds the DUI of a given CUI</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept  &lt;- the concept</code></pre>
+
+<p>output:</p>
+
+<pre><code> $dui &lt;- the MSH DUI</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept  = &quot;C0018563&quot;;
+ my $cui       = $umls-&gt;getDUI($concept); 
+ print &quot;The DUI for $concept is $dui\n&quot;;</code></pre>
+
+<h3 id="findNumberOfCloserConcepts1">findNumberOfCloserConcepts</h3>
+
+<p>description:</p>
+
+<pre><code> function that finds the number of cuis closer to concept1 than concept2</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept1  &lt;- the first concept
+ $concept2  &lt;- the second concept</code></pre>
+
+<p>output:</p>
+
+<pre><code> $int &lt;- number of cuis closer to concept1 than concept2</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept1  = &quot;C0018563&quot;;
+ my $concept2  = &quot;C0016129&quot;;
+ my $int       = $umls-&gt;findNumberOfCloserConcepts($concept1,$concept2);
+ print &quot;The number of closer concepts to $concept1 than $concept2 is $int\n&quot;;</code></pre>
+
+<h3 id="findClosenessCentrality">findClosenessCentrality</h3>
+
+<p>description:</p>
+
+<pre><code> function that closeness centrality of a concept </code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept  &lt;- the concept</code></pre>
+
+<p>output:</p>
+
+<pre><code> $double &lt;- the closeness centrality </code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept  = &quot;C0018563&quot;;
+ my $double   =  $umls-&gt;findClosenessCentrality($concept);
+ print &quot;The Closeness Centrality for $concept is $double\n&quot;;</code></pre>
+
+<h3 id="findAncestors">findAncestors</h3>
+
+<p>description:</p>
+
+<pre><code> function that returns all the ancestors of a concept </code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept  &lt;- the concept</code></pre>
+
+<p>output:</p>
+
+<pre><code> %hash &lt;- reference to hash containing ancestors</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept = &quot;C0018563&quot;;
+ my $hash =  $umls-&gt;findAncestors($concept); </code></pre>
+
+<h3 id="findDescendents">findDescendents</h3>
+
+<p>description:</p>
+
+<pre><code> function that returns all the ancestors of a concept </code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept  &lt;- the concept</code></pre>
+
+<p>output:</p>
+
+<pre><code> %hash &lt;- reference to hash containing ancestors</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept = &quot;C0018563&quot;;
+ my $hash =  $umls-&gt;findDescendents($concept); </code></pre>
+
+<h3 id="findShortestPathLength">findShortestPathLength</h3>
+
+<p>description:</p>
+
+<pre><code> function that finds the length of the shortest path</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept1  &lt;- the first concept
+ $concept2  &lt;- the second concept</code></pre>
+
+<p>output:</p>
+
+<pre><code> $int &lt;- the length of the shortest path between them</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept1  = &quot;C0018563&quot;;
+ my $concept2  = &quot;C0016129&quot;;
+ my $int       =  $umls-&gt;findShortestPathLength($concept1,$concept2);
+ print &quot;The shortest path length between $concept1 than $concept2 is $int\n&quot;;</code></pre>
+
+<h3 id="findShortestPath">findShortestPath</h3>
+
+<p>description:</p>
+
+<pre><code> returns the shortest path between two concepts given the sources and 
+ relations specified in the configuration file</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept1 &lt;- string containing the first cui
+ $concept2 &lt;- string containing the second</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array    &lt;- reference to an array containing the shortest path(s)</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept1  = &quot;C0018563&quot;;
+ my $concept2  = &quot;C0016129&quot;;
+ my $array     = $umls-&gt;findShortestPath($concept1,$concept2);
+ print &quot;The shortest path(s) between $concept1 than $concept2 are:\n&quot;;
+ foreach my $path (@{$array}) { print &quot;  $path\n&quot;; }</code></pre>
+
+<h3 id="findLeastCommonSubsumer">findLeastCommonSubsumer</h3>
+
+<p>description:</p>
+
+<pre><code> returns the least common subsummer between two concepts given the sources 
+ and relations specified in the configuration file</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept1 &lt;- string containing the first cui
+ $concept2 &lt;- string containing the second</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array    &lt;- reference to an array containing the lcs(es)</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept1  = &quot;C0018563&quot;;
+ my $concept2  = &quot;C0016129&quot;;
+ my $array     = $umls-&gt;findLeastCommonSubsumer($concept1,$concept2);
+ print &quot;The LCS(es) between $concept1 than $concept2 iare:\n&quot;;
+ foreach my $lcs (@{$array}) { print &quot;  $lcs\n&quot;; }</code></pre>
+
+<h3 id="setUndirectedPath">setUndirectedPath</h3>
+
+<p>description:</p>
+
+<pre><code> function set the undirected option for the path on or off</code></pre>
+
+<p>input:</p>
+
+<pre><code> $option &lt;- 1 (true) 0 (false)</code></pre>
+
+<p>output:</p>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ $umls-&gt;setUndirectedOption(1); </code></pre>
+
+<h3 id="setRealtimePath">setRealtimePath</h3>
+
+<p>description:</p>
+
+<pre><code> function set the realtime option for the path on or off</code></pre>
+
+<p>input:</p>
+
+<pre><code> $option &lt;- 1 (true) 0 (false)</code></pre>
+
+<p>output:</p>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ $umls-&gt;setRealtimeOption(1); </code></pre>
+
+<h2 id="Metathesaurus-Concept-Propagation-Functions">Metathesaurus Concept Propagation Functions</h2>
+
+<h3 id="setPropagationParameters">setPropagationParameters</h3>
+
+<p>description:</p>
+
+<pre><code> sets the propagation counts </code></pre>
+
+<p>input:</p>
+
+<pre><code> $hash &lt;- reference to hash containing parameters
+          debug         -&gt; turn debug option on 
+          icpropagation -&gt; file containing icpropagation counts
+          icfrequency   -&gt; file containing icfrequency counts
+          smooth        -&gt; whether you want to smooth the frequency counts
+          realtime      -&gt; calculate the intrinsic ic in realtime         </code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+
+ $umls-&gt;setPropagationParameters(\%hash);</code></pre>
+
+<h3 id="getIC">getIC</h3>
+
+<p>description:</p>
+
+<pre><code> returns the information content of a given cui</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing a cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $double  &lt;- double containing its IC</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept  = &quot;C0018563&quot;;
+ my $double   = $umls-&gt;getIC($concept);
+ print &quot;The IC of $concept is $double\n&quot;;</code></pre>
+
+<h3 id="getSecoIntrinsicIC">getSecoIntrinsicIC</h3>
+
+<p>description:</p>
+
+<pre><code> returns the intrinsic information content of a given cui using 
+ the formula proposed by Seco, Veale and Hayes 2004</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing a cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $double  &lt;- double containing its IC</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept  = &quot;C0018563&quot;;
+ my $double   = $umls-&gt;getSecoIntrinsicIC($concept);
+ print &quot;The Intrinsic IC of $concept is $double\n&quot;;</code></pre>
+
+<h3 id="getSanchezIntrinsicIC">getSanchezIntrinsicIC</h3>
+
+<p>description:</p>
+
+<pre><code> returns the intrinsic information content of a given cui using 
+ the formula proposed by Sanchez and Batet 2011</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing a cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $double  &lt;- double containing its IC</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept  = &quot;C0018563&quot;;
+ my $double   = $umls-&gt;getSanchezIntrinsicIC($concept);
+ print &quot;The Intrinsic IC of $concept is $double\n&quot;;</code></pre>
+
+<h3 id="getProbability">getProbability</h3>
+
+<p>description:</p>
+
+<pre><code> returns the probability of a given cui</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing a cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $double  &lt;- double containing its probability</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept  = &quot;C0018563&quot;;
+ my $double   = $umls-&gt;getProbability($concept);
+ print &quot;The probability of $concept is $double\n&quot;;</code></pre>
+
+<h3 id="getN">getN</h3>
+
+<p>description:</p>
+
+<pre><code> returns the total number of CUIs (N)</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+         </code></pre>
+
+<p>output:</p>
+
+<pre><code> $int  &lt;- integer containing frequency</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+
+ my $int = $umls-&gt;getN();</code></pre>
+
+<h3 id="getFrequency">getFrequency</h3>
+
+<p>description:</p>
+
+<pre><code> returns the propagation count (frequency) of a given cui</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing a cui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $double  &lt;- double containing its frequency</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $concept  = &quot;C0018563&quot;;
+ my $double   = $umls-&gt;getFrequency($concept);
+ print &quot;The frequency of $concept is $double\n&quot;;</code></pre>
+
+<h3 id="getPropagationCuis">getPropagationCuis</h3>
+
+<p>description:</p>
+
+<pre><code> returns all of the cuis to be propagated given the sources 
+ and relations specified by the user in the configuration file</code></pre>
+
+<p>input:</p>
+
+<pre><code> None  
+        </code></pre>
+
+<p>output:</p>
+
+<pre><code> $hash &lt;- reference to hash containing the cuis</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+
+ my $hash = $umls-&gt;getPropagationCuis();</code></pre>
+
+<h3 id="propagateCounts">propagateCounts</h3>
+
+<p>description:</p>
+
+<pre><code> propagates the given frequency counts</code></pre>
+
+<p>input:</p>
+
+<pre><code> $hash &lt;- reference to the hash containing the frequency counts</code></pre>
+
+<p>output:</p>
+
+<pre><code> $hash &lt;- containing the propagation counts of all the cuis 
+          given the sources and relations specified in the 
+          configuration file</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+
+ my $phash = $umls-&gt;propagateCounts(\%fhash);</code></pre>
+
+<h2 id="Semantic-Network-Functions">Semantic Network Functions</h2>
+
+<h3 id="getSemanticRelation">getSemanticRelation</h3>
+
+<p>description:</p>
+
+<pre><code> subroutine to get the relation(s) between two semantic types</code></pre>
+
+<p>input:</p>
+
+<pre><code> $st1   &lt;- semantic type abbreviation
+ $st2   &lt;- semantic type abbreviation</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array &lt;- reference to an array of semantic relation(s)</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+        
+ my $st1   = &quot;blor&quot;;
+ my $st2   = &quot;bpoc&quot;;
+ my $array = $umls-&gt;getSemanticRelation($st1,$st2);
+ print &quot;The relations between $st1 and $st2 are:\n&quot;;
+ foreach my $relation (@{$array}) { print &quot;  $relation\n&quot;; }</code></pre>
+
+<h3 id="getSt">getSt</h3>
+
+<p>description:</p>
+
+<pre><code> returns the semantic type(s) of a given concept</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing a concept</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- reference to an array containing the semantic type&#39;s TUIs
+             associated with the concept</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+        
+ my $concept  = &quot;C0018563&quot;;     
+ my $array    = $umls-&gt;getSts($concept);
+ print &quot;The semantic types associated with $concept are:\n&quot;;
+ foreach my $st (@{$array}) { print &quot;  $st\n&quot;; }</code></pre>
+
+<h3 id="getSt1">getSt</h3>
+
+<p>description:</p>
+
+<pre><code> returns the semantic type(s) of a given concept</code></pre>
+
+<p>input:</p>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- reference to an array containing all the semantic type&#39;s TUIs
+             </code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+        
+ my $concept  = &quot;C0018563&quot;;     
+ my $array    = $umls-&gt;getAllSts(); 
+ print &quot;The semantic types in the UMLS are: \n&quot;; 
+ foreach my $st (@{$array}) { print &quot;  $st\n&quot;; }</code></pre>
+
+<h3 id="getSemanticGroup">getSemanticGroup</h3>
+
+<p>description:</p>
+
+<pre><code> function returns the semantic group(s) associated with the concept</code></pre>
+
+<p>input:</p>
+
+<pre><code> $concept &lt;- string containing cuis</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- $array reference containing semantic groups</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+        
+ my $concept  = &quot;C0018563&quot;;     
+ my $array    = $umls-&gt;getSemanticGroup($concept);
+ print &quot;The semantic group associated with $concept are:\n&quot;;
+ foreach my $sg (@{$array}) { print &quot;  $sg\n&quot;; }</code></pre>
+
+<h3 id="getAllSemanticGroups">getAllSemanticGroups</h3>
+
+<p>description:</p>
+
+<pre><code> function returns all the semantic groups</code></pre>
+
+<p>input:</p>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- $array reference containing semantic groups</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+        
+ my $concept  = &quot;C0018563&quot;;     
+ my $array    = $umls-&gt;getAllSemanticGroups(); 
+ print &quot;The semantic groups are:\n&quot;;
+ foreach my $sg (@{$array}) { print &quot;  $sg\n&quot;; }</code></pre>
+
+<h3 id="getStsFromSg">getStsFromSg</h3>
+
+<p>description:</p>
+
+<pre><code> function returns all the semantic types of a given semantic group</code></pre>
+
+<p>input:</p>
+
+<pre><code> $string &lt;- semantic group code</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- $array reference containing semantic types</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+        
+ my $sg  = &quot;PROC&quot;;      
+ my $array    = $umls-&gt;getStsFromSg($sg); 
+ print &quot;The semantic types are:\n&quot;;
+ foreach my $st (@{$array}) { print &quot;  $st\n&quot;; }</code></pre>
+
+<h3 id="stGetSemanticGroup">stGetSemanticGroup</h3>
+
+<p>description:</p>
+
+<pre><code> function returns the semantic group(s) associated with a semantic type</code></pre>
+
+<p>input:</p>
+
+<pre><code> $st &lt;- string containing semantic type abbreviations</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- $array reference containing semantic groups</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+        
+ my $st  = &quot;pboc&quot;;
+ my $array    = $umls-&gt;stGetSemanticGroup($st);
+ print &quot;The semantic group associated with $st are:\n&quot;;
+ foreach my $sg (@{$array}) { print &quot;  $sg\n&quot;; }</code></pre>
+
+<h3 id="getStString">getStString</h3>
+
+<p>description:</p>
+
+<pre><code> returns the full name of a semantic type given its abbreviation</code></pre>
+
+<p>input:</p>
+
+<pre><code> $st     &lt;- string containing the abbreviation of the semantic type</code></pre>
+
+<p>output:</p>
+
+<pre><code> $string &lt;- string containing the full name of the semantic type</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+        
+ my $st     = &quot;bpoc&quot;;
+ my $string = $umls-&gt;getStString($st);
+ print &quot;The abbreviation $st stands for $string\n&quot;;</code></pre>
+
+<h3 id="getStAbr">getStAbr</h3>
+
+<p>description:</p>
+
+<pre><code> returns the abreviation of a semantic type given its TUI (UI)</code></pre>
+
+<p>input:</p>
+
+<pre><code> $tui    &lt;- string containing the semantic type&#39;s TUI</code></pre>
+
+<p>output:</p>
+
+<pre><code> $string &lt;- string containing the semantic type&#39;s abbreviation</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+        
+ my $tui    = &quot;T023&quot;
+ my $string = $umls-&gt;getStAbr($tui);
+ print &quot;The abbreviation of $tui is $string\n&quot;;</code></pre>
+
+<h3 id="getStTui">getStTui</h3>
+
+<p>description:</p>
+
+<pre><code> function to get the name of a semantic type&#39;s TUI given its abbrevation</code></pre>
+
+<p>input:</p>
+
+<pre><code> $string &lt;- string containing the semantic type&#39;s abbreviation</code></pre>
+
+<p>output:</p>
+
+<pre><code> $tui    &lt;- string containing the semantic type&#39;s TUI</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+        
+ my $string = &quot;bpoc&quot;
+ my $tui     = $umls-&gt;getStAbr($tui);
+ print &quot;The tui of $string is $tui\n&quot;;</code></pre>
+
+<h3 id="getStDef">getStDef</h3>
+
+<p>description:</p>
+
+<pre><code> returns the definition of the semantic type - expecting abbreviation</code></pre>
+
+<p>input:</p>
+
+<pre><code> $st     &lt;- string containing the semantic type&#39;s abbreviation</code></pre>
+
+<p>output:</p>
+
+<pre><code> $string &lt;- string containing the semantic type&#39;s definition</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+        
+ my $st     = &quot;bpoc&quot;
+ my $string = $umls-&gt;getStDef($st);
+ print &quot;The definition of $st is $string\n&quot;;</code></pre>
+
+<h2 id="Semantic-Network-Path-Functions">Semantic Network Path Functions</h2>
+
+<h3 id="stPathsToRoot">stPathsToRoot</h3>
+
+<p>description:</p>
+
+<pre><code> This function to find all the paths from a semantic type (tui)  
+ to the root node of the is-a taxonomy in the semantic network</code></pre>
+
+<p>input:</p>
+
+<pre><code> $tui     &lt;- string containing tui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array   &lt;- array reference containing the paths</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new();     
+
+ my $tui   = &quot;T023&quot;
+ my $array = $umls-&gt;stPathsToRoot($tui);
+ print &quot;The paths from $tui to the root are:\n&quot;;
+ foreach my $path (@{$array}) { print &quot;  $path\n&quot;;</code></pre>
+
+<h3 id="stFindShortestPath">stFindShortestPath</h3>
+
+<p>description:</p>
+
+<pre><code> This function returns the shortest path between two semantic type TUIs.</code></pre>
+
+<p>input:</p>
+
+<pre><code> $st1   &lt;- string containing the first tui
+ $st2   &lt;- string containing the second tui</code></pre>
+
+<p>output:</p>
+
+<pre><code> $array &lt;- reference to an array containing paths</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+
+  my $st1  = &quot;T023&quot;;
+  my $st2  = &quot;T029&quot;;
+  my $array     = $umls-&gt;stFindShortestPath($st1,$st2);
+  print &quot;The shortest path(s) between $st1 than $st2 are:\n&quot;;
+  foreach my $path (@{$array}) { print &quot;  $path\n&quot;; }</code></pre>
+
+<h2 id="Semantic-Network-Propagation-Functions">Semantic Network Propagation Functions</h2>
+
+<h3 id="loadStPropagationHash">loadStPropagationHash</h3>
+
+<p>description:</p>
+
+<pre><code> load the propagation hash for the semantic network</code></pre>
+
+<p>input:</p>
+
+<pre><code> $hash  &lt;- reference to a hash containing probability counts</code></pre>
+
+<p>output:</p>
+
+<pre><code> None
+ </code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+
+ $umls-&gt;loadStPropagationHash(\%hash);</code></pre>
+
+<h3 id="propagateStCounts">propagateStCounts</h3>
+
+<p>description:</p>
+
+<pre><code> propagates the given frequency counts of the semantic types</code></pre>
+
+<p>input:</p>
+
+<pre><code> $hash &lt;- reference to the hash containing the frequency counts</code></pre>
+
+<p>output:</p>
+
+<pre><code> $hash &lt;- containing the propagation counts of all the semantic types</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+
+ my $phash = $umls-&gt;propagateStCounts(\%fhash);</code></pre>
+
+<h3 id="getStIC">getStIC</h3>
+
+<p>description:</p>
+
+<pre><code> returns the information content of a given semantic type</code></pre>
+
+<p>input:</p>
+
+<pre><code> $st      &lt;- string containing a semantic type</code></pre>
+
+<p>output:</p>
+
+<pre><code> $double  &lt;- double containing its IC</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $st = &quot;bpoc&quot;;
+ my $double = $umls-&gt;getStIC($st);
+ print &quot;The IC of $st is $double\n&quot;;
+ </code></pre>
+
+<h3 id="getStProbability">getStProbability</h3>
+
+<p>description:</p>
+
+<pre><code> returns the probability of a given semantic type</code></pre>
+
+<p>input:</p>
+
+<pre><code> $st      &lt;- string containing a semantic type</code></pre>
+
+<p>output:</p>
+
+<pre><code> $double  &lt;- double containing its probabilit</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $st = &quot;bpoc&quot;;
+ my $double = $umls-&gt;getStProbability($st);
+ print &quot;The Probability of $st is $double\n&quot;;</code></pre>
+
+<h3 id="getStN">getStN</h3>
+
+<p>description:</p>
+
+<pre><code> returns the total number of semantic types (N)</code></pre>
+
+<p>input:</p>
+
+<p>output:</p>
+
+<pre><code> $int  &lt;- double containing frequency</code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ my $int = $umls-&gt;getStN();</code></pre>
+
+<h3 id="setStSmoothing">setStSmoothing</h3>
+
+<p>description:</p>
+
+<pre><code> function to set the smoothing parameter</code></pre>
+
+<p>input:</p>
+
+<pre><code> None
+          </code></pre>
+
+<p>output:</p>
+
+<pre><code> None
+  </code></pre>
+
+<p>example:</p>
+
+<pre><code> use UMLS::Interface;
+ my $umls = UMLS::Interface-&gt;new(); 
+ $umls-&gt;setStSmoothing();</code></pre>
+
+<h1 id="REFERENCING">REFERENCING</h1>
+
+<p>If you write a paper that has used UMLS-Interface in some way, we&#39;d certainly be grateful if you sent us a copy and referenced UMLS-Interface. We have a published paper that provides a suitable reference:</p>
+
+<pre><code>    @inproceedings{McInnesPP09,
+       title={{UMLS-Interface and UMLS-Similarity : Open Source 
+               Software for Measuring Paths and Semantic Similarity}}, 
+       author={McInnes, B.T. and Pedersen, T. and Pakhomov, S.V.}, 
+       booktitle={Proceedings of the American Medical Informatics 
+                  Association (AMIA) Symposium},
+       year={2009}, 
+       month={November}, 
+       address={San Fransico, CA}
+    }</code></pre>
+
+<p>This paper is also found in</p>
+
+<p>http://www-users.cs.umn.edu/~bthomson/publications/pubs.html</p>
+
+<p>or</p>
+
+<p>http://www.d.umn.edu/~tpederse/Pubs/amia09.pdf</p>
+
+<h1 id="SEE-ALSO">SEE ALSO</h1>
+
+<p>http://tech.groups.yahoo.com/group/umls-similarity/</p>
+
+<p>http://search.cpan.org/dist/UMLS-Similarity/</p>
+
+<h1 id="AUTHOR">AUTHOR</h1>
+
+<p>Bridget T McInnes &lt;bthomson@cs.umn.edu&gt; Ted Pedersen &lt;tpederse@d.umn.edu&gt;</p>
+
+<h1 id="COPYRIGHT">COPYRIGHT</h1>
+
+<pre><code> Copyright (c) 2007-2009
+ Bridget T. McInnes, University of Minnesota
+ bthomson at cs.umn.edu
+
+ Ted Pedersen, University of Minnesota Duluth
+ tpederse at d.umn.edu
+
+ Siddharth Patwardhan, University of Utah, Salt Lake City
+ sidd at cs.utah.edu
+
+ Serguei Pakhomov, University of Minnesota Twin Cities
+ pakh0002 at umn.edu
+
+ Ying Liu, University of Minnesota
+ liux0935 at umn.edu</code></pre>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to</p>
+
+<pre><code> The Free Software Foundation, Inc.,
+ 59 Temple Place - Suite 330,
+ Boston, MA  02111-1307, USA.</code></pre>
+
+
+</body>
+
+</html>
+
+

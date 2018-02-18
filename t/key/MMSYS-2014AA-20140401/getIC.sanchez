@@ -1,0 +1,25 @@
+
+CuiFinder User Options: 
+   --config option set
+
+
+UMLS-Interface Configuration Information
+  Sources (SAB):
+    MSH
+  Relations (REL):
+    CHD
+    PAR
+  Database: 
+    umls (MMSYS-2014AA-20140401)
+
+
+
+PathFinder User Options:
+  --realtime option set
+
+
+
+ICFinder User Options:
+  --realtime option set
+
+The information content of hand (C0018563) is 13.7412826349385

@@ -1,0 +1,32 @@
+
+CuiFinder User Options: 
+   --config option set
+
+
+UMLS-Interface Configuration Information
+  Sources (SAB):
+    MTH
+  Relations (REL):
+    RB
+    RN
+  Database: 
+    umls (MMSYS-2016AA-20160329)
+
+
+
+
+max_depth : 3
+avg_depth : 1.8
+sd_depth  : 0.90921211313239
+paths_to_root : 14
+sources : MTH
+max_branch : 7
+avg_branch : 4.66666666666667
+leaf_count : 12
+node_count : 3
+decendents : 15
+avg_leaf_depth : 1.91666666666667
+avg_node_depth : 1.33333333333333
+mean_leaf_depth : 0
+mean_node_depth : 2
+root : C0038454
